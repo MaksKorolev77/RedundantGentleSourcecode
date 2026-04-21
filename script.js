@@ -130,7 +130,7 @@ function renderFooter(){
             </a>
             <a href="mailto:info@ultrakarkas.ru" class="contact-item">
               <div class="icon-wrap">${icon('mail')}</div>
-              <div style="padding-top:.4rem"><div class="title">info@ultrakarkas.ru</div></div>
+              <div><div class="title">info@ultrakarkas.ru</div><div class="small">Написать письмо</div></div>
             </a>
             <a href="https://yandex.ru/maps/-/CPCOQC3w" target="_blank" rel="noopener" class="contact-item">
               <div class="icon-wrap">${icon('pin')}</div>
