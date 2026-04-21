@@ -39,6 +39,46 @@
   var qsa = function (s, r) { return Array.from((r || document).querySelectorAll(s)); };
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]); }); };
 
+  // ============ Отправка в скрытую форму Tilda (#rec2114006861) ============
+  function setNativeValue(el, val) {
+    if (!el) return;
+    var proto = Object.getPrototypeOf(el);
+    var desc  = Object.getOwnPropertyDescriptor(proto, 'value');
+    if (desc && desc.set) { desc.set.call(el, val); } else { el.value = val; }
+    el.dispatchEvent(new Event('input',  { bubbles: true }));
+    el.dispatchEvent(new Event('change', { bubbles: true }));
+    el.dispatchEvent(new Event('blur',   { bubbles: true }));
+  }
+  function submitToTilda(data, onSuccess, onError) {
+    var tildaRoot = document.querySelector('#rec2114006861');
+    var tildaForm = tildaRoot ? tildaRoot.querySelector('form') : null;
+    if (!tildaForm) { if (onError) onError('Форма Tilda #rec2114006861 не найдена'); return; }
+    function getTildaField(selectors) {
+      for (var i = 0; i < selectors.length; i++) {
+        var el = tildaForm.querySelector(selectors[i]);
+        if (el) return el;
+      }
+      return null;
+    }
+    var fName     = getTildaField(['input[name="name"]',     'input[name="Name"]',     'input[type="text"]']);
+    var fPhone    = getTildaField(['input[name="phone"]',    'input[name="Phone"]',    'input[type="tel"]']);
+    var fArea     = getTildaField(['input[name="area"]',     'input[name="Area"]',     'select[name="area"]',     'select[name="Area"]']);
+    var fComplect = getTildaField(['input[name="complect"]', 'input[name="Complect"]', 'select[name="complect"]', 'select[name="Complect"]']);
+    var fComment  = getTildaField(['textarea[name="comment"]', 'textarea[name="Comment"]', 'input[name="comment"]', 'input[name="Comment"]']);
+    if (!fName || !fPhone) { if (onError) onError('Не найдены поля name / phone в форме Tilda'); return; }
+    setNativeValue(fName,  data.name  || '');
+    setNativeValue(fPhone, data.phone || '');
+    if (fArea)     setNativeValue(fArea,     data.area              || '');
+    if (fComplect) setNativeValue(fComplect, data['package'] || data.complect || '');
+    if (fComment)  setNativeValue(fComment,  data.comment           || '');
+    var realSubmit = tildaForm.querySelector('button[type="submit"]') ||
+                     tildaForm.querySelector('input[type="submit"]')  ||
+                     tildaForm.querySelector('.t-submit');
+    if (!realSubmit) { if (onError) onError('Не найдена кнопка отправки в форме Tilda'); return; }
+    setTimeout(function () { realSubmit.click(); }, 100);
+    if (onSuccess) setTimeout(onSuccess, 2000);
+  }
+
   // ============ Projects data ============
   var PROJECTS = [
     { slug:'uyut', name:'Уют', priceFrom:'от 4 808 000 ₽', area:'120.2', bedrooms:3, bathrooms:1, floors:'1 этаж', style:'Скандинавский', cover:'https://static.tildacdn.com/tild3935-6232-4064-a130-313330313561/dg120.png' },
@@ -116,9 +156,21 @@
       });
       if (!f.querySelector('[name="consent"]').checked) { ok = false; alert('Необходимо согласие на обработку данных'); }
       if (!ok) return;
-      console.log('Form submitted:', Object.fromEntries(new FormData(f).entries()));
-      qs('#lead-form-wrap').style.display = 'none';
-      qs('#lead-success').style.display = '';
+      var fd   = new FormData(f);
+      var sbtn = f.querySelector('[type="submit"]');
+      if (sbtn) sbtn.disabled = true;
+      submitToTilda(
+        { name: fd.get('name'), phone: fd.get('phone'), area: fd.get('area'), 'package': fd.get('package'), comment: fd.get('comment') },
+        function () {
+          if (sbtn) sbtn.disabled = false;
+          qs('#lead-form-wrap').style.display = 'none';
+          qs('#lead-success').style.display = '';
+        },
+        function (err) {
+          if (sbtn) sbtn.disabled = false;
+          alert('Ошибка отправки: ' + err);
+        }
+      );
     });
     document.addEventListener('click', function (e) {
       var t = e.target.closest('[data-modal-open]');
@@ -294,9 +346,21 @@
       });
       if (!form.querySelector('[name="consent"]').checked) { ok = false; alert('Необходимо согласие на обработку данных'); }
       if (!ok) return;
-      console.log('Contact form submitted:', Object.fromEntries(new FormData(form).entries()));
-      qs('#contact-form-wrap').style.display = 'none';
-      qs('#contact-success').style.display = '';
+      var fd   = new FormData(form);
+      var sbtn = form.querySelector('[type="submit"]');
+      if (sbtn) sbtn.disabled = true;
+      submitToTilda(
+        { name: fd.get('name'), phone: fd.get('phone'), area: fd.get('area'), 'package': fd.get('package'), comment: fd.get('comment') },
+        function () {
+          if (sbtn) sbtn.disabled = false;
+          qs('#contact-form-wrap').style.display = 'none';
+          qs('#contact-success').style.display = '';
+        },
+        function (err) {
+          if (sbtn) sbtn.disabled = false;
+          alert('Ошибка отправки: ' + err);
+        }
+      );
     });
   }
 

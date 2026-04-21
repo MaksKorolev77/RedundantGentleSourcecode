@@ -1,0 +1,1219 @@
+<div id="karkaspro-tilda">
+  <header class="kp-topbar">
+    <div class="kp-container kp-topbar__inner">
+      <a href="#top" class="kp-logo">
+        <span class="kp-logo__badge"><i data-lucide="house"></i></span>
+        <span class="kp-logo__text">Ультра<span>Каркас</span></span>
+      </a>
+
+      <nav class="kp-nav">
+        <a href="/projects">Проекты</a>
+        <a href="#configurations">Комплектации</a>
+        <a href="#stages">Этапы</a>
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <div class="kp-topbar__actions">
+        <a href="tel:+74993909789" class="kp-phone"><i data-lucide="phone"></i> +7 (499) 390-97-89</a>
+        <a href="#contact" class="kp-btn kp-btn--light">Получить расчёт</a>
+      </div>
+
+      <div class="kp-mobile-actions">
+        <a href="tel:+74993909789" class="kp-mobile-call" aria-label="Позвонить" style="color: white;">
+          <i data-lucide="phone"></i>
+        </a>
+
+        <button class="kp-mobile-toggle" type="button" data-open-mobile aria-label="Открыть меню">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="kp-mobile-panel">
+    <div class="kp-mobile-overlay" data-close-mobile></div>
+
+    <div class="kp-mobile-drawer">
+      <div class="kp-mobile-head">
+        <span class="kp-logo__text kp-logo__text--mobile">Ультра<span>Каркас</span></span>
+        <button class="kp-mobile-toggle kp-mobile-toggle--close" type="button" data-close-mobile aria-label="Закрыть меню">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <nav class="kp-mobile-nav">
+        <a href="/projects">Проекты</a>
+        <a href="#configurations">Комплектации</a>
+        <a href="#stages">Этапы</a>
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <div class="kp-mobile-bottom">
+        <a href="tel:+74993909789" class="kp-btn kp-btn--outline"><i data-lucide="phone"></i> +7 (499) 390-97-89</a>
+        <a href="#contact" class="kp-btn kp-btn--primary">Получить расчёт</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="kp-hero" id="top">
+    <div class="kp-hero__bg">
+      <img src="https://static.tildacdn.com/tild6631-3063-4737-a464-666665306230/luch_render_17751215.png" alt="Строительство каркасных домов">
+    </div>
+    <div class="kp-hero__overlay"></div>
+    <div class="kp-container kp-hero__inner">
+      <div class="kp-hero__pill">Надёжно. Тепло. На века.</div>
+
+      <h1 class="kp-hero__title">
+        Строительство каркасных домов
+        <span>под ключ</span>
+      </h1>
+
+      <p class="kp-hero__text">
+        Строим по готовым проектам и индивидуальным решениям заказчика от базовой комплектации до чистовой.
+      </p>
+
+      <div class="kp-hero__actions">
+        <a href="/projects" class="kp-btn kp-btn--primary">Смотреть проекты</a>
+        <a href="#contact" class="kp-btn kp-btn--light">Обсудить проект</a>
+      </div>
+
+      <div class="kp-stats">
+        <div class="kp-stat-card">
+          <div class="kp-stat-card__icon"><i data-lucide="clock-3"></i></div>
+          <div>
+            <div class="kp-stat-card__value">18 лет</div>
+            <div class="kp-stat-card__label">опыта в строительстве</div>
+          </div>
+        </div>
+
+        <div class="kp-stat-card">
+          <div class="kp-stat-card__icon"><i data-lucide="house"></i></div>
+          <div>
+            <div class="kp-stat-card__value">147+ домов</div>
+            <div class="kp-stat-card__label">успешно сдано</div>
+          </div>
+        </div>
+
+        <div class="kp-stat-card">
+          <div class="kp-stat-card__icon"><i data-lucide="shield-check"></i></div>
+          <div>
+            <div class="kp-stat-card__value">10 лет</div>
+            <div class="kp-stat-card__label">официальной гарантии</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kp-section" id="projects">
+    <div class="kp-container">
+      <div class="kp-section-head">
+        <div>
+          <div class="kp-section-label">Каталог</div>
+          <h2 class="kp-section-title">Проекты домов</h2>
+          <p class="kp-section-text">
+           Энергоэффективные дома с усиленной конструкцией, рассчитанные на стабильность, тишину и тепло в любое время года
+          </p>
+        </div>
+        <a href="/projects" class="kp-btn kp-btn--outline">Каталог проектов</a>
+      </div>
+
+      <div class="kp-projects-grid">
+        <article class="kp-project-card">
+          <div class="kp-project-card__media">
+            <img src="https://static.tildacdn.com/tild6562-3931-4364-b734-343231636234/dg120.png" alt="Проект каркасного дома Уют">
+            <a href="/project-uyut" class="kp-project-card__media-link" aria-label="Смотреть подробнее"></a>
+            <div class="kp-project-card__price">от 4 808 000 ₽</div>
+            <div class="kp-project-card__hover">Смотреть проект →</div>
+          </div>
+          <div class="kp-project-card__body">
+            <h3>Проект «Уют»</h3>
+            <div class="kp-project-card__specs">
+              <div class="kp-spec-pill"><i data-lucide="maximize-2"></i><span>120.2 м²</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bed-double"></i><span>3 спальни</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bath"></i><span>1 санузел</span></div>
+            </div>
+            <div class="kp-project-card__actions">
+              <a href="/project-uyut" class="kp-btn kp-btn--primary kp-btn--full">Смотреть</a>
+              <a href="#contact" class="kp-btn kp-btn--outline kp-btn--full">Хочу такой</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="kp-project-card">
+          <div class="kp-project-card__media">
+            <img src="https://static.tildacdn.com/tild3135-6434-4138-a438-386336323365/dg90.png" alt="Проект каркасного дома Комфорт">
+             <a href="/project-komfort" class="kp-project-card__media-link" aria-label="Смотреть подробнее"></a>
+            <div class="kp-project-card__price">от 4 520 000 ₽</div>
+            <div class="kp-project-card__hover">Смотреть проект →</div>
+          </div>
+          
+          <div class="kp-project-card__body">
+            <h3>Проект «Комфорт»</h3>
+            <div class="kp-project-card__specs">
+              <div class="kp-spec-pill"><i data-lucide="maximize-2"></i><span>113 м²</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bed-double"></i><span>4 спальни</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bath"></i><span>2 санузла</span></div>
+            </div>
+            <div class="kp-project-card__actions">
+              <a href="/project-komfort" class="kp-btn kp-btn--primary kp-btn--full">Смотреть</a>
+              <a href="#contact" class="kp-btn kp-btn--outline kp-btn--full">Хочу такой</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="kp-project-card">
+          <div class="kp-project-card__media">
+            <img src="https://static.tildacdn.com/tild3138-3432-4335-b635-653534623235/dg70.png" alt="Проект каркасного дома Семейный">
+            <a href="/project-semeynyy" class="kp-project-card__media-link" aria-label="Смотреть подробнее"></a>
+            <div class="kp-project-card__price">от 4 328 000 ₽</div>
+            <div class="kp-project-card__hover">Смотреть проект →</div>
+          </div>
+          <div class="kp-project-card__body">
+            <h3>Проект «Семейный»</h3>
+            <div class="kp-project-card__specs">
+              <div class="kp-spec-pill"><i data-lucide="maximize-2"></i><span>108.2 м²</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bed-double"></i><span>3 спальни</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bath"></i><span>1 санузел</span></div>
+            </div>
+            <div class="kp-project-card__actions">
+              <a href="/project-semeynyy" class="kp-btn kp-btn--primary kp-btn--full">Смотреть</a>
+              <a href="#contact" class="kp-btn kp-btn--outline kp-btn--full">Хочу такой</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="kp-project-card">
+          <div class="kp-project-card__media">
+            <img src="https://static.tildacdn.com/tild6638-3438-4635-b839-346630663132/dg130.png" alt="Проект каркасного дома Просторный">
+            <a href="/project-prostornyy" class="kp-project-card__media-link" aria-label="Смотреть подробнее"></a>
+            <div class="kp-project-card__price">от 7 756 000 ₽</div>
+            <div class="kp-project-card__hover">Смотреть проект →</div>
+          </div>
+          <div class="kp-project-card__body">
+            <h3>Проект «Просторный»</h3>
+            <div class="kp-project-card__specs">
+              <div class="kp-spec-pill"><i data-lucide="maximize-2"></i><span>193.9 м²</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bed-double"></i><span>5 спален</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bath"></i><span>2 санузла</span></div>
+            </div>
+            <div class="kp-project-card__actions">
+              <a href="/project-prostornyy" class="kp-btn kp-btn--primary kp-btn--full">Смотреть</a>
+              <a href="#contact" class="kp-btn kp-btn--outline kp-btn--full">Хочу такой</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="kp-project-card">
+          <div class="kp-project-card__media">
+            <img src="https://static.tildacdn.com/tild6163-3062-4835-b633-326535346235/dg50.png" alt="Проект каркасного дома Загородный">
+             <a href="/project-zagorodnyy" class="kp-project-card__media-link" aria-label="Смотреть подробнее"></a>
+            <div class="kp-project-card__price">от 8 800 000 ₽</div>
+            <div class="kp-project-card__hover">Смотреть проект →</div>
+          </div>
+          <div class="kp-project-card__body">
+            <h3>Проект «Загородный»</h3>
+            <div class="kp-project-card__specs">
+              <div class="kp-spec-pill"><i data-lucide="maximize-2"></i><span>220 м²</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bed-double"></i><span>3 спальни</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bath"></i><span>2 санузла</span></div>
+            </div>
+            <div class="kp-project-card__actions">
+              <a href="/project-zagorodnyy" class="kp-btn kp-btn--primary kp-btn--full">Смотреть</a>
+              <a href="#contact" class="kp-btn kp-btn--outline kp-btn--full">Хочу такой</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="kp-project-card">
+          <div class="kp-project-card__media">
+            <img src="https://static.tildacdn.com/tild3062-6565-4430-b230-343061336461/80.png" alt="Проект каркасного дома Лесной">
+            <a href="/project-lesnoy" class="kp-project-card__media-link" aria-label="Смотреть подробнее"></a>
+            <div class="kp-project-card__price">от 3 168 000 ₽</div>
+            <div class="kp-project-card__hover">Смотреть проект →</div>
+          </div>
+          <div class="kp-project-card__body">
+            <h3>Проект «Лесной»</h3>
+            <div class="kp-project-card__specs">
+              <div class="kp-spec-pill"><i data-lucide="maximize-2"></i><span>79.2 м²</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bed-double"></i><span>2 спальни</span></div>
+              <div class="kp-spec-pill"><i data-lucide="bath"></i><span>1 санузел</span></div>
+            </div>
+            <div class="kp-project-card__actions">
+              <a href="/project-lesnoy" class="kp-btn kp-btn--primary kp-btn--full">Смотреть</a>
+              <a href="#contact" class="kp-btn kp-btn--outline kp-btn--full">Хочу такой</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="kp-section kp-section--light" id="configurations">
+    <div class="kp-container">
+      <div class="kp-section-head kp-section-head--center kp-section-head--single">
+        <div>
+          <div class="kp-section-label">Комплектации</div>
+          <h2 class="kp-section-title">Выберите комплектацию</h2>
+          <p class="kp-section-text kp-section-text--center">
+            Готовые решения с возможностью адаптации под ваши пожелания
+          </p>
+        </div>
+      </div>
+
+      <div class="kp-config-cards">
+        <button class="kp-config-card" data-config-toggle="econom" type="button">
+          <div>
+            <div class="kp-config-card__title">Эконом</div>
+            <div class="kp-config-card__price">от 40 000 ₽/м²</div>
+            <div class="kp-config-card__text">Базовый тёплый контур</div>
+          </div>
+          <div class="kp-config-card__icon">Открыть ↓</div>
+        </button>
+
+        <button class="kp-config-card" data-config-toggle="optimum" type="button">
+          <div>
+            <div class="kp-config-card__title">Оптимум</div>
+            <div class="kp-config-card__price">от 50 000 ₽/м²</div>
+            <div class="kp-config-card__text">Золотая середина цены и набора опций</div>
+          </div>
+          <div class="kp-config-card__icon">Открыть ↓</div>
+        </button>
+
+        <button class="kp-config-card" data-config-toggle="maximum" type="button">
+          <div>
+            <div class="kp-config-card__title">Максимум</div>
+            <div class="kp-config-card__price">от 60 000 ₽/м²</div>
+            <div class="kp-config-card__text">Премиальные материалы и усиленный каркас</div>
+          </div>
+          <div class="kp-config-card__icon">Открыть ↓</div>
+        </button>
+      </div>
+
+      <div class="kp-config-table-wrap" id="kp-config-table-wrap" hidden>
+        <table class="kp-config-table kp-config-table--desktop">
+          <thead>
+            <tr>
+              <th>Состав комплектации</th>
+              <th data-config-col="econom">Эконом<br><small>от 40 000 ₽/м²</small></th>
+              <th data-config-col="optimum">Оптимум<br><small>от 50 000 ₽/м²</small></th>
+              <th data-config-col="maximum">Максимум<br><small>от 60 000 ₽/м²</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="kp-config-table__section"><td colspan="4">Основание:</td></tr>
+            <tr><td>Фундамент</td><td>Ж/б забивные сваи 150x150x3000</td><td>Ж/б забивные сваи 150x150x3000</td><td>Ж/б забивные сваи 150x150x3000</td></tr>
+            
+            <tr class="kp-config-table__section"><td colspan="4">Цокольное перекрытие:</td></tr>
+            <tr><td>Нижняя обвязка</td><td>Сухая строганная доска 150×150 мм</td><td>Сухая строганная доска 150×150 мм</td><td>Сухая строганная доска 150×150 мм</td></tr>
+
+            <tr class="kp-config-table__section"><td colspan="4">Пол:</td></tr>
+            <tr><td>Лаги пола</td><td>Сухая строганная доска (камерной сушки) 45×190 мм</td><td>Сухая строганная доска (камерной сушки) 45×190 мм</td><td>Сухая строганная доска (камерной сушки) 45×190 мм</td></tr>
+            <tr><td>Утепление пола</td><td>Каменная вата 200 мм</td><td>Каменная вата 200 мм</td><td>Каменная вата 250 мм</td></tr>
+            <tr><td>Черный пол</td><td>Обрезная доска 20x100 мм</td><td>Обрезная доска 20x100 мм</td><td>Обрезная доска 20x100 мм</td></tr>
+            <tr><td>Покрытие</td><td>—</td><td>Фанера 18 мм</td><td>Фанера 18 мм</td></tr>
+
+            <tr class="kp-config-table__section"><td colspan="4">Каркас:</td></tr>
+            <tr><td>Каркас внешних стен</td><td>Сухая строганная доска (камерной сушки) 45x145 мм</td><td>Сухая строганная доска (камерной сушки) 45x145 мм + брусок 40x50 мм</td><td>Сухая строганная доска (камерной сушки) 45x190 мм + брусок 40x50 мм</td></tr>
+            <tr><td>Утепление внешних стен</td><td>Каменная вата 150 мм</td><td>Каменная вата 150+50=200 мм</td><td>Каменная вата 200+50=250 мм</td></tr>
+            <tr><td>Утепление перегородок</td><td>Каменная вата 100 мм</td><td>Каменная вата 100 мм</td><td>Каменная вата 100 мм</td></tr>
+            <tr><td>Внутренняя отделка</td><td>—</td><td>Имитация бруса</td><td>OSB + Гипсокартон</td></tr>
+            <tr><td>Наружная отделка</td><td>OSB 12 мм</td><td>Имитация бруса (карельский профиль)</td><td>Фиброцементный сайдинг</td></tr>
+            <tr><td>Отделка потолка</td><td>—</td><td>OSB 9 мм</td><td>OSB 9 мм</td></tr>
+            <tr><td>Утепление потолка</td><td>Каменная вата 200 мм</td><td>Каменная вата 200 мм</td><td>Каменная вата 250 мм</td></tr>
+            <tr><td>Окна</td><td>Пластиковые окна ПВХ 70 Рехау</td><td>Пластиковые окна ПВХ 70 Рехау</td><td>Пластиковые окна ПВХ 70 Рехау</td></tr>
+            <tr><td>Дверь</td><td>Металлическая дверь с терморазрывом, толщиной 100 мм</td><td>Металлическая дверь с терморазрывом, толщиной 100 мм</td><td>Металлическая дверь с терморазрывом, толщиной 100 мм</td></tr>
+
+            <tr class="kp-config-table__section"><td colspan="4">Кровля:</td></tr>
+            <tr><td>Стропило, сухая строганная доска 45×190 мм</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Покрытие кровли</td><td>Металлочерепица 0.5 мм Grand Line</td><td>Металлочерепица 0.5 мм Grand Line</td><td>Металлочерепица 0.5 мм Grand Line</td></tr>
+            <tr><td>Водостоки</td><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Снегозадержатели</td><td>—</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Подшив карнизных свесов</td><td>—</td><td>Пластиковые софиты с перфорацией</td><td>Пластиковые софиты с перфорацией</td></tr>
+            <tr><td>Утепление</td><td>Каменная вата 200 мм</td><td>Каменная вата 200 мм</td><td>Каменная вата 250 мм</td></tr>
+            <tr><td>Плёнки ветрозащиты и пароизоляции</td><td>Мембрана Изоспан AM, Пароизоляционная пленка Ютафол Н 110, Мембрана ветро-влагозащитная Изоспан A</td><td>Мембрана Изоспан AM, Пароизоляционная пленка Ютафол Н 110, Мембрана ветро-влагозащитная Изоспан A</td><td>Мембрана Изоспан AM, Пароизоляционная пленка Ютафол Н 110, Мембрана ветро-влагозащитная Изоспан A</td></tr>
+
+            <tr class="kp-config-table__section"><td colspan="4">Инженерные системы:</td></tr>
+            <tr><td>Вентиляция</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Электрика</td><td>Труба ПНД 32 мм (закладная)</td><td>Труба ПНД 32 мм (закладная)</td><td>Труба ПНД 32 мм (закладная)</td></tr>
+            <tr><td>Водоснабжение</td><td>Труба ПНД 50 мм (закладная)</td><td>Труба ПНД 50 мм (закладная)</td><td>Труба ПНД 50 мм (закладная)</td></tr>
+            <tr><td>Канализация</td><td>Труба ПВХ 110 мм</td><td>Труба ПВХ 110 мм</td><td>Труба ПВХ 110 мм</td></tr>
+
+            <tr class="kp-config-table__foot">
+              <td colspan="4">Разводка электрики, водоснабжения, отопления и канализации рассчитывается индивидуально.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="kp-config-mobile" id="kp-config-mobile"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="kp-section kp-stages-section" id="stages">
+    <div class="kp-container">
+      <div class="kp-section-head kp-section-head--center kp-section-head--single">
+        <div>
+          <div class="kp-section-label">Этапы работы</div>
+          <h2 class="kp-section-title">Как мы строим ваш дом</h2>
+          <p class="kp-section-text kp-section-text--center">
+            Понятный процесс с фиксированными этапами, прозрачными условиями и полным сопровождением — от первого выезда на участок до передачи готового дома.
+          </p>
+        </div>
+      </div>
+
+      <div class="kp-stages-premium">
+        <div class="kp-stage-premium">
+          <div class="kp-stage-premium__top">
+            <div class="kp-stage-premium__num">01</div>
+            <div class="kp-stage-premium__icon"><i data-lucide="pen-tool"></i></div>
+          </div>
+          <h3>Проектирование и договор</h3>
+          <p>Согласовываем архитектуру, планировку и состав работ. Фиксируем стоимость, сроки и этапы строительства.</p>
+        </div>
+
+        <div class="kp-stage-premium">
+          <div class="kp-stage-premium__top">
+            <div class="kp-stage-premium__num">02</div>
+            <div class="kp-stage-premium__icon"><i data-lucide="construction"></i></div>
+          </div>
+          <h3>Возведение фундамента</h3>
+          <p>Выполняем устройство фундамента с учётом типа грунта, нагрузок и особенностей участка.</p>
+        </div>
+
+        <div class="kp-stage-premium">
+          <div class="kp-stage-premium__top">
+            <div class="kp-stage-premium__num">03</div>
+            <div class="kp-stage-premium__icon"><i data-lucide="hammer"></i></div>
+          </div>
+          <h3>Каркас, кровля и инженерия</h3>
+          <p>Собираем силовой каркас, монтируем кровлю, утепляем конструкцию. Монтируем инженерные системы.</p>
+        </div>
+        
+        <div class="kp-stage-premium">
+          <div class="kp-stage-premium__top">
+            <div class="kp-stage-premium__num">04</div>
+            <div class="kp-stage-premium__icon"><i data-lucide="brick-wall"></i></div>
+          </div>
+          <h3>Отделочные работы</h3>
+          <p>Выполняем внутреннюю и внешнюю отделку: от черновых работ до финишного покрытия и фасада.</p>
+        </div>
+
+        <div class="kp-stage-premium">
+          <div class="kp-stage-premium__top">
+            <div class="kp-stage-premium__num">05</div>
+            <div class="kp-stage-premium__icon"><i data-lucide="key-round"></i></div>
+          </div>
+          <h3>Сдача готового дома</h3>
+          <p>Проводим контроль качества, подписываем акт приёма-передачи дома и отдаём Вам ключи.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="kp-services" id="services">
+    <div class="kp-container kp-services__inner">
+      <div class="kp-section-label">Услуги</div>
+      <h2 class="kp-services__title">Строительство, проектирование<span> и отделка</span></h2>
+      <p class="kp-services__text">
+        Комплексный подход: от идеи до готового дома с отделкой.<br>Работаем с типовыми и полностью индивидуальными задачами.
+      </p>
+
+      <div class="kp-services-grid">
+          <div class="kp-service-card">
+          <div class="kp-service-card__icon"><i data-lucide="pen-tool"></i></div>
+          <h3>Индивидуальное проектирование</h3>
+          <div class="kp-service-card__price">от 500 ₽</div>
+          <ul>
+            <li><i data-lucide="check"></i><span>Создание проекта с нуля под ваш образ жизни</span></li>
+            <li><i data-lucide="check"></i><span>Адаптация и доработка типовых проектов</span></li>
+            <li><i data-lucide="check"></i><span>Архитектурный раздел (АР)</span></li>
+            <li><i data-lucide="check"></i><span>Реалистичная 3D-визуализация будущего дома</span></li>
+          </ul>
+        </div>
+          
+        <div class="kp-service-card">
+          <div class="kp-service-card__icon"><i data-lucide="hammer"></i></div>
+          <h3>Строительство под ключ</h3>
+          <div class="kp-service-card__price">от 40 000 ₽/м²</div>
+          <ul>
+            <li><i data-lucide="check"></i><span>Монтаж надёжного фундамента</span></li>
+            <li><i data-lucide="check"></i><span>Сборка прочного силового каркаса</span></li>
+            <li><i data-lucide="check"></i><span>Устройство кровельной системы</span></li>
+            <li><i data-lucide="check"></i><span>Многослойное утепление и пароизоляция</span></li>
+            <li><i data-lucide="check"></i><span>Установка окон и дверей</span></li>
+            <li><i data-lucide="check"></i><span>Разводка инженерных систем</span></li>
+          </ul>
+        </div>
+
+
+        <div class="kp-service-card">
+          <div class="kp-service-card__icon"><i data-lucide="brick-wall"></i></div>
+          <h3>Отделочные работы</h3>
+          <ul>
+            <li><i data-lucide="check"></i><span>Внутренняя черновая и чистовая отделка</span></li>
+            <li><i data-lucide="check"></i><span>Монтаж напольных покрытий (ламинат, плитка)</span></li>
+            <li><i data-lucide="check"></i><span>Поклейка обоев и покраска стен</span></li>
+            <li><i data-lucide="check"></i><span>Внешняя отделка фасада (сайдинг, штукатурка, планкен)</span></li>
+            <li><i data-lucide="check"></i><span>Устройство натяжных и подвесных потолков</span></li>
+            <li><i data-lucide="check"></i><span>Установка дверей, плинтусов и доборных элементов</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="kp-section kp-why-hero" id="about">
+    <div class="kp-why-hero__bg">
+      <img src="https://static.tildacdn.com/tild3866-6465-4330-a166-643566353433/ultrakarkaswhy.png" alt="Каркасный дом под ключ">
+    </div>
+    <div class="kp-why-hero__overlay"></div>
+
+    <div class="kp-container kp-why-hero__inner">
+      <div class="kp-section-label">Почему выбирают нас</div>
+
+      <h2 class="kp-section-title kp-section-title--white">
+        Строим дома в которых продумано всё
+      </h2>
+
+      <p class="kp-section-text kp-why-hero__text">
+        Используем современные подходы к строительству, чтобы дом был надёжным,
+        энергоэффективным и удобным в жизни. Продумываем не только конструкцию,
+        но и повседневный комфорт, сроки и итоговый результат.
+      </p>
+
+      <div class="kp-why-hero__stats">
+        <div class="kp-why-hero__stat">
+          <strong>10 лет</strong>
+          <span>официальной гарантии</span>
+        </div>
+        <div class="kp-why-hero__stat">
+          <strong>4 сезона</strong>
+          <span>Строим круглый год</span>
+        </div>
+        <div class="kp-why-hero__stat">
+          <strong>18 лет</strong>
+          <span>опыта в строительстве</span>
+        </div>
+      </div>
+
+      <div class="kp-why-hero__grid">
+        <div class="kp-why-hero__item">
+          <span class="kp-why-hero__icon"><i data-lucide="shield-check"></i></span>
+          <span>Прочный несущий каркас</span>
+        </div>
+
+        <div class="kp-why-hero__item">
+          <span class="kp-why-hero__icon"><i data-lucide="thermometer-sun"></i></span>
+          <span>Энергоэффективность</span>
+        </div>
+
+        <div class="kp-why-hero__item">
+          <span class="kp-why-hero__icon"><i data-lucide="pencil-ruler"></i></span>
+          <span>Продуманные планировки</span>
+        </div>
+
+        <div class="kp-why-hero__item">
+          <span class="kp-why-hero__icon"><i data-lucide="hammer"></i></span>
+          <span>Строительство под ключ</span>
+        </div>
+
+        <div class="kp-why-hero__item">
+          <span class="kp-why-hero__icon"><i data-lucide="calendar-days"></i></span>
+          <span>Фиксированные сроки</span>
+        </div>
+
+        <div class="kp-why-hero__item">
+          <span class="kp-why-hero__icon"><i data-lucide="badge-check"></i></span>
+          <span>Контроль качества на каждом этапе</span>
+        </div>
+      </div>
+
+      <div class="kp-why-hero__actions">
+        <a href="#contact" class="kp-btn kp-btn--primary">Обсудить проект</a>
+        <a href="/projects" class="kp-btn kp-btn--light">Смотреть проекты</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="kp-section" id="faq">
+    <div class="kp-container kp-faq-wrap">
+      <div class="kp-section-head kp-section-head--center kp-section-head--single">
+        <div>
+          <div class="kp-section-label">Вопросы</div>
+          <h2 class="kp-section-title">Часто задаваемые вопросы</h2>
+        </div>
+      </div>
+
+      <details class="kp-faq-item">
+        <summary>Какой фундамент нужен для каркасного дома?<span>Открыть</span></summary>
+        <p>В большинстве случаев подбирается свайный или свайно-ростверковый фундамент. Конкретное решение зависит от геологии участка и параметров дома.</p>
+      </details>
+
+      <details class="kp-faq-item">
+        <summary>Можно ли строить зимой?<span>Открыть</span></summary>
+        <p>Да. Каркасная технология позволяет вести большинство работ круглый год при соблюдении технологии монтажа.</p>
+      </details>
+
+      <details class="kp-faq-item">
+        <summary>Сколько времени занимает строительство?<span>Открыть</span></summary>
+        <p>Срок зависит от площади, архитектуры и комплектации. В среднем строительство занимает от 2 до 6 месяцев.</p>
+      </details>
+
+      <details class="kp-faq-item">
+        <summary>Можно ли изменить планировку под себя?<span>Открыть</span></summary>
+        <p>Да, мы можем адаптировать типовой проект или разработать индивидуальное решение с нуля.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="kp-section kp-section--light" id="contact">
+    <div class="kp-container kp-contact-grid">
+      <div class="kp-contact-card kp-contact-card--dark">
+        <div class="kp-section-label">Контакты</div>
+        <h2 class="kp-section-title kp-section-title--left kp-section-title--white">Как с нами связаться?</h2>
+
+        <div class="kp-contact-list">
+  <a href="tel:+74993909789" class="kp-contact-item">
+    <span class="kp-contact-item__icon"><i data-lucide="phone"></i></span>
+    <span><small>Телефон</small><strong>+7 (499) 390-97-89</strong></span>
+  </a>
+
+  <a href="https://t.me/+79269935818" class="kp-contact-item" target="_blank" rel="noopener noreferrer">
+    <span class="kp-contact-item__icon"><i data-lucide="send"></i></span>
+    <span><small>Telegram</small><strong>+7 (926) 993-58-18</strong></span>
+  </a>
+
+  <a href="https://wa.me/79269935818" class="kp-contact-item" target="_blank" rel="noopener noreferrer">
+    <span class="kp-contact-item__icon"><i data-lucide="message-circle"></i></span>
+    <span><small>WhatsApp</small><strong>+7 (926) 993-58-18</strong></span>
+  </a>
+
+  <a href="mailto:info@ultrakarkas.ru" class="kp-contact-item">
+    <span class="kp-contact-item__icon"><i data-lucide="mail"></i></span>
+    <span><small>Почта</small><strong>info@ultrakarkas.ru</strong></span>
+  </a>
+  
+  <a href="https://yandex.ru/maps/-/CPCOQC3w" class="kp-contact-item">
+    <span class="kp-contact-item__icon"><i data-lucide="mail"></i></span>
+    <span><small>Адрес</small><strong>Московская обл., г. Одинцово, р.п. Заречье, ул. Торговая, 2С</strong></span>
+  </a>
+  
+  <div class="kp-contact-item">
+    <span class="kp-contact-item__icon"><i data-lucide="clock-3"></i></span>
+    <span><small>Режим работы</small><strong>Ежедневно: 10:00 – 18:00</strong></span>
+  </div>
+        </div>
+      </div>
+
+      <div class="kp-contact-card kp-contact-card--light kp-contact-card--compact">
+        <div class="kp-contact-form-head">
+          <div class="kp-section-label">Получить расчёт</div>
+          <h3>Подберём проект или рассчитаем ваш</h3>
+          <p>Оставьте контакты, и мы поможем выбрать проект, площадь и комплектацию дома.</p>
+        </div>
+
+        <form class="kp-form" id="kpLeadForm">
+
+  <div class="kp-form__grid">
+    <div class="t-input-group">
+      <label><span>Ваше имя *</span></label>
+      <input type="text" name="name" class="t-input" placeholder="Иван Иванов" required>
+    </div>
+
+    <div class="t-input-group">
+      <label><span>Телефон *</span></label>
+      <input type="tel" name="phone" class="t-input" placeholder="+7 (999) 000-00-00" required>
+    </div>
+  </div>
+
+  <div class="t-input-group">
+    <label><span>Желаемая площадь дома *</span></label>
+    <div class="kp-form__select-wrap">
+      <select name="area" class="t-select" required>
+        <option value="">Выберите площадь</option>
+        <option value="до 100 м²">до 100 м²</option>
+        <option value="100–150 м²">100–150 м²</option>
+        <option value="150–200 м²">150–200 м²</option>
+        <option value="200–250 м²">200–250 м²</option>
+        <option value="250+ м²">250+ м²</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="t-input-group">
+    <label><span>Комментарий</span></label>
+    <textarea name="comment" class="t-input" rows="5" placeholder="Например: есть участок..."></textarea>
+  </div>
+
+  <div class="t-input-group">
+   <label class="kp-form__checkbox">
+  <input type="checkbox" id="kpPolicyCheck" required>
+  <span> 
+     Отправляя форму, даю согласие на
+    <a href="/privacy" class="kp-policy-link" target="_blank">
+      обработку моих персональных данных
+    </a>
+  </span>
+</label>
+  </div>
+
+  <div class="kp-form__error" id="kpFormError">Заполните обязательные поля</div>
+  <div class="kp-form__success" id="kpFormSuccess">Заявка отправлена. Скоро с Вами свяжеться менеджер</div>
+
+  <div class="t-form__submit">
+    <button type="submit" class="kp-btn kp-btn--primary" id="kpSubmitBtn">
+      <span>Отправить заявку</span>
+    </button>
+  </div>
+</form>
+      </div>
+    </div>
+  </section>
+  
+ <div>
+  <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=162576044910" width="100%" height="400" frameborder="0"></iframe>
+  </div>
+  
+  <footer class="kp-footer">
+    <div class="kp-container kp-footer__grid">
+      <div>
+        <div class="kp-footer__logo">Ультра<span>Каркас</span></div>
+        <p>Строительство современных, тёплых и надёжных каркасных домов под ключ. Работаем по официальному договору и сопровождаем проект на всех этапах.</p>
+      </div>
+
+      <div>
+        <h4>Навигация</h4>
+        <a href="/projects">Проекты домов</a>
+        <a href="#configurations">Комплектации</a>
+        <a href="#stages">Этапы работы</a>
+        <a href="#contact">Контакты</a>
+      </div>
+
+      <div>
+        <h4>Клиентам</h4>
+        <div>Индивидуальные проекты</div>
+        <div>Расчёт стоимости</div>
+        <div>Подбор комплектации</div>
+        <div>Консультация по участку</div>
+      </div>
+
+      <div>
+        <h4>Режим работы</h4>
+       <div style="cursor: pointer;" onclick="window.location.href='tel:+74993909789'">
+    Ежедневно: 10:00 – 18:00
+</div>
+<div style="cursor: pointer;" onclick="window.location.href='tel:+74993909789'">
+    Тел.: +7 (499) 390-97-89
+</div> 
+<div style="cursor: pointer;" onclick="window.location.href='mailto:info@ultrakarkas.ru'">
+    Почта: info@ultrakarkas.ru
+</div>
+<div style="cursor: pointer;" onclick="window.open('https://yandex.ru/maps/?text=Москва, ул. Строителей, д. 12')">
+    Адрес: Московская обл., г. Одинцово, р.п. Заречье, ул. Торговая, 2С
+</div>
+    </div>
+    </div>
+
+    <div class="kp-container kp-footer__bottom">
+      <p>© 2026 «Ультра Каркас»</p>
+      <div>
+        <a href="/privacy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  
+</div>
+
+
+<style>
+#karkaspro-tilda .kp-service-card__price{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  margin:10px 0 14px;
+  padding:0 12px;
+  border-radius:999px;
+  background:rgba(245,122,0,.10);
+  color:var(--kp-orange);
+  font-size:14px;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:.01em;
+}
+@media (max-width:767px){
+  #karkaspro-tilda .kp-service-card__price{
+    margin:8px 0 12px;
+    font-size:13px;
+  }
+}
+</style>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+(function(){
+  const root = document.getElementById('karkaspro-tilda');
+  if(!root) return;
+
+  const topbar = root.querySelector('.kp-topbar');
+  const mobilePanel = root.querySelector('.kp-mobile-panel');
+  const mobileOpenButtons = root.querySelectorAll('[data-open-mobile]');
+  const mobileCloseButtons = root.querySelectorAll('[data-close-mobile]');
+  const mobileLinks = root.querySelectorAll('.kp-mobile-nav a');
+
+  function updateTopbarState(){
+    if(!topbar) return;
+    topbar.classList.toggle('is-scrolled', window.scrollY > 20);
+  }
+
+  updateTopbarState();
+  window.addEventListener('scroll', updateTopbarState);
+
+  const CONFIG_DATA = {
+    econom: {
+      title:'Комплектация «Эконом»',
+      subtitle:'Базовый тёплый контур',
+      price:'от 40 000 ₽/м²'
+    },
+    optimum: {
+      title:'Комплектация «Оптимум»',
+      subtitle:'Золотая середина цены и набора опций',
+      price:'от 50 000 ₽/м²'
+    },
+    maximum: {
+      title:'Комплектация «Максимум»',
+      subtitle:'Премиальные материалы и усиленный каркас',
+      price:'от 60 000 ₽/м²'
+    }
+  };
+
+  const CONFIG_SECTIONS = [
+    {
+      title:'Основание:',
+      icon:'landmark',
+      rows:[
+        ['Фундамент',['Ж/б забивные сваи 150x150x3000','Ж/б забивные сваи 150x150x3000','Ж/б забивные сваи 150x150x3000']],
+      ]
+    },
+    {
+      title:'Цокольное перекрытие:',
+      icon:'layers-2',
+      rows:[
+        ['Нижняя обвязка',['Сухая строганная доска 150×150 мм','Сухая строганная доска 150×150 мм','Сухая строганная доска 150×150 мм']],
+      ]
+    },
+    {
+      title:'Пол:',
+      icon:'layers-3',
+      rows:[
+        ['Лаги пола',['Сухая строганная доска (камерной сушки) 45×190 мм','Сухая строганная доска (камерной сушки) 45×190 мм','Сухая строганная доска (камерной сушки) 45×190 мм']],
+        ['Утепление пола',['Каменная вата 200 мм','Каменная вата 200 мм','Каменная вата 250 мм']],
+        ['Черный пол',['Обрезная доска 20x100 мм','Обрезная доска 20x100 мм','Обрезная доска 20x100 мм']],
+        ['Покрытие',['—','Фанера 18 мм','Фанера 18 мм']]
+      ]
+    },
+    {
+      title:'Каркас:',
+      icon:'house',
+      rows:[
+        ['Каркас внешних стен',['Сухая строганная доска (камерной сушки) 45x145 мм','Сухая строганная доска (камерной сушки) 45x145 мм + брусок 40x50 мм','Сухая строганная доска (камерной сушки) 45x190 мм + брусок 40x50 мм']],
+        ['Утепление внешних стен',['Каменная вата 150 мм','Каменная вата 150+50=200 мм','Каменная вата 200+50=250 мм']],
+        ['Утепление перегородок',['Каменная вата 100 мм','Каменная вата 100 мм','Каменная вата 100 мм']],
+        ['Внутренняя отделка',['—','Имитация бруса','OSB + Гипсокартон']],
+        ['Наружная отделка',['OSB 12 мм','Имитация бруса (карельский профиль)','Фиброцементный сайдинг']],
+        ['Отделка потолка',['—','OSB 9 мм','OSB 9 мм']],
+        ['Утепление потолка',['Каменная вата 200 мм','Каменная вата 200 мм','Каменная вата 250 мм']],
+        ['Окна',['Пластиковые окна ПВХ 70 Рехау','Пластиковые окна ПВХ 70 Рехау','Пластиковые окна ПВХ 70 Рехау']],
+        ['Дверь',['Металлическая дверь с терморазрывом, толщиной 100 мм','Металлическая дверь с терморазрывом, толщиной 100 мм','Металлическая дверь с терморазрывом, толщиной 100 мм']]
+      ]
+    },
+    {
+      title:'Кровля:',
+      icon:'warehouse',
+      rows:[
+        ['Стропило, доска 45×190 мм камерной сушки',['✓','✓','✓']],
+        ['Покрытие кровли',['Металлочерепица 0.5 мм Grand Line','Металлочерепица 0.5 мм Grand Line','Металлочерепица 0.5 мм Grand Line']],
+        ['Водостоки',['—','✓','✓']],
+        ['Снегозадержатели',['—','✓','✓']],
+        ['Подшив карнизных свесов',['—','Пластиковые софиты с перфорацией','Пластиковые софиты с перфорацией']],
+        ['Утепление',['Каменная вата 200 мм','Каменная вата 200 мм','Каменная вата 250 мм']],
+        ['Плёнки ветрозащиты и пароизоляции',['Мембрана Изоспан AM, Пароизоляционная пленка Ютафол Н 110, Мембрана ветро-влагозащитная Изоспан A','Мембрана Изоспан AM, Пароизоляционная пленка Ютафол Н 110, Мембрана ветро-влагозащитная Изоспан A','Мембрана Изоспан AM, Пароизоляционная пленка Ютафол Н 110, Мембрана ветро-влагозащитная Изоспан A']]
+      ]
+    },
+    {
+      title:'Инженерные системы:',
+      icon:'settings-2',
+      rows:[
+        ['Вентиляция',['✓','✓','✓']],
+        ['Электрика',['Труба ПНД 32 мм (закладная)','Труба ПНД 32 мм (закладная)','Труба ПНД 32 мм (закладная)']],
+        ['Водоснабжение',['Труба ПНД 50 мм (закладная)','Труба ПНД 50 мм (закладная)','Труба ПНД 50 мм (закладная)']],
+        ['Канализация',['Труба ПВХ 110 мм','Труба ПВХ 110 мм','Труба ПВХ 110 мм']]
+      ]
+    }
+  ];
+
+  const toggles = root.querySelectorAll('[data-config-toggle]');
+  const tableWrap = root.querySelector('#kp-config-table-wrap');
+  const columns = root.querySelectorAll('[data-config-col]');
+  const mobileBox = root.querySelector('#kp-config-mobile');
+
+  let active = null;
+
+  function renderMobileConfig(key){
+    if(!mobileBox || !CONFIG_DATA[key]) return;
+
+    const idx = key === 'econom' ? 0 : key === 'optimum' ? 1 : 2;
+    const head = CONFIG_DATA[key];
+
+    let html = '';
+    html += '<div class="kp-config-mobile__head">';
+    html += '<h3>' + head.title + '</h3>';
+    html += '<p>' + head.subtitle + '</p>';
+    html += '<div class="kp-config-mobile__price">' + head.price + '</div>';
+    html += '</div>';
+    html += '<div class="kp-config-mobile__body">';
+
+    CONFIG_SECTIONS.forEach(section => {
+      html += '<div class="kp-config-mobile__section">';
+      html += '<div class="kp-config-mobile__section-head"><i data-lucide="' + section.icon + '"></i><span>' + section.title + '</span></div>';
+
+      section.rows.forEach(row => {
+        const value = row[1][idx];
+        html += '<div class="kp-config-mobile__row">';
+        html += '<div class="kp-config-mobile__label">' + row[0] + '</div>';
+
+        if(value === '✓'){
+          html += '<div class="kp-config-mobile__value"><span class="kp-config-mobile__badge"><i data-lucide="check"></i>Есть</span></div>';
+        } else if(value === '—'){
+          html += '<div class="kp-config-mobile__value"><span class="kp-config-mobile__badge"><i data-lucide="minus"></i>Нету</span></div>';
+        } else {
+          html += '<div class="kp-config-mobile__value">' + value + '</div>';
+        }
+
+        html += '</div>';
+      });
+
+      html += '</div>';
+    });
+
+    html += '</div>';
+    mobileBox.innerHTML = html;
+  }
+
+  toggles.forEach(btn => {
+    btn.addEventListener('click', function(){
+      const key = this.getAttribute('data-config-toggle');
+      active = active === key ? null : key;
+
+      toggles.forEach(item => {
+        const icon = item.querySelector('.kp-config-card__icon');
+        const current = item.getAttribute('data-config-toggle') === active;
+        item.classList.toggle('is-active', current);
+        if(icon) icon.textContent = current ? 'Скрыть ↑' : 'Открыть ↓';
+      });
+
+      if(tableWrap) tableWrap.hidden = !active;
+
+      columns.forEach(col => {
+        col.classList.toggle('is-active', col.getAttribute('data-config-col') === active);
+      });
+
+      const desktopRows = tableWrap ? tableWrap.querySelectorAll('.kp-config-table--desktop tbody tr') : [];
+      desktopRows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        if(cells.length < 4) return;
+
+        ['econom','optimum','maximum'].forEach((name, index) => {
+          const cell = cells[index + 1];
+          if(cell) cell.classList.toggle('is-active', active === name);
+        });
+      });
+
+      if(active){
+        renderMobileConfig(active);
+      } else if(mobileBox){
+        mobileBox.innerHTML = '';
+      }
+
+      if(window.lucide && window.lucide.createIcons){
+        window.lucide.createIcons();
+      }
+
+      if(active && tableWrap && window.matchMedia('(max-width: 767px)').matches){
+        requestAnimationFrame(() => {
+          const topbarHeight = topbar ? topbar.offsetHeight : 0;
+          const extraOffset = 16;
+          const targetTop = tableWrap.getBoundingClientRect().top + window.pageYOffset - topbarHeight - extraOffset;
+
+          window.scrollTo({
+            top: targetTop,
+            behavior: 'smooth'
+          });
+        });
+      }
+    });
+  });
+
+  function openMenu(){
+    if(mobilePanel) mobilePanel.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu(){
+    if(mobilePanel) mobilePanel.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  mobileOpenButtons.forEach(btn => btn.addEventListener('click', openMenu));
+  mobileCloseButtons.forEach(btn => btn.addEventListener('click', closeMenu));
+  mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+  if(window.lucide && window.lucide.createIcons){
+    window.lucide.createIcons();
+  }
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const customForm = document.getElementById('kpLeadForm');
+  const tildaRoot = document.querySelector('#rec2114006861');
+  const tildaForm = tildaRoot ? tildaRoot.querySelector('form') : null;
+
+  if (!customForm) {
+    console.log('Не найдена видимая форма #kpLeadForm');
+    return;
+  }
+
+  if (!tildaForm) {
+    console.log('Не найдена форма внутри #rec2114006861');
+    return;
+  }
+
+  const submitBtn = document.getElementById('kpSubmitBtn');
+  const policy = document.getElementById('kpPolicyCheck');
+  const errorBox = document.getElementById('kpFormError');
+  const successBox = document.getElementById('kpFormSuccess');
+
+  function showError(text) {
+    if (!errorBox) return;
+    errorBox.textContent = text;
+    errorBox.classList.add('is-visible');
+  }
+
+  function hideMessages() {
+    if (errorBox) errorBox.classList.remove('is-visible');
+    if (successBox) successBox.classList.remove('is-visible');
+  }
+
+  function getVisibleField(selectors) {
+    for (const selector of selectors) {
+      const el = customForm.querySelector(selector);
+      if (el) return el;
+    }
+    return null;
+  }
+
+  function getTildaField(selectors) {
+    for (const selector of selectors) {
+      const el = tildaForm.querySelector(selector);
+      if (el) return el;
+    }
+    return null;
+  }
+
+  function setNativeValue(element, value) {
+    if (!element) return;
+
+    const tag = element.tagName.toLowerCase();
+
+    if (tag === 'input' || tag === 'textarea' || tag === 'select') {
+      const prototype = Object.getPrototypeOf(element);
+      const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
+
+      if (descriptor && descriptor.set) {
+        descriptor.set.call(element, value);
+      } else {
+        element.value = value;
+      }
+
+      element.dispatchEvent(new Event('input', { bubbles: true }));
+      element.dispatchEvent(new Event('change', { bubbles: true }));
+      element.dispatchEvent(new Event('blur', { bubbles: true }));
+      return;
+    }
+
+    element.value = value;
+    element.dispatchEvent(new Event('input', { bubbles: true }));
+    element.dispatchEvent(new Event('change', { bubbles: true }));
+    element.dispatchEvent(new Event('blur', { bubbles: true }));
+  }
+
+  function debugTildaFields() {
+    const all = tildaForm.querySelectorAll('input, textarea, select');
+    const dump = [];
+    all.forEach((el, i) => {
+      dump.push({
+        index: i,
+        tag: el.tagName,
+        name: el.getAttribute('name'),
+        type: el.getAttribute('type'),
+        value: el.value
+      });
+    });
+    console.log('📋 Поля формы Тильды:', dump);
+  }
+
+  customForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    hideMessages();
+
+    const visibleName = getVisibleField([
+      '[name="name"]',
+      '[name="Name"]'
+    ]);
+
+    const visiblePhone = getVisibleField([
+      '[name="phone"]',
+      '[name="Phone"]'
+    ]);
+
+    const visibleArea = getVisibleField([
+      'select[name="area"]',
+      'select[name="Area"]',
+      'input[name="area"]',
+      'input[name="Area"]'
+    ]);
+
+    const visibleComment = getVisibleField([
+      'textarea[name="comment"]',
+      'textarea[name="Comment"]',
+      'input[name="comment"]',
+      'input[name="Comment"]'
+    ]);
+
+    const name = visibleName ? visibleName.value.trim() : '';
+    const phone = visiblePhone ? visiblePhone.value.trim() : '';
+    const area = visibleArea ? visibleArea.value.trim() : '';
+    const comment = visibleComment ? visibleComment.value.trim() : '';
+
+    console.log('Данные видимой формы:', { name, phone, area, comment });
+
+    if (!name || !phone || !area) {
+      showError('Заполните обязательные поля');
+      return;
+    }
+
+    if (!policy || !policy.checked) {
+      showError('Подтвердите согласие с политикой конфиденциальности');
+      return;
+    }
+
+    debugTildaFields();
+
+    const tildaName = getTildaField([
+      'input[name="name"]',
+      'input[name="Name"]',
+      'input[type="text"]'
+    ]);
+
+    const tildaPhone = getTildaField([
+      'input[name="phone"]',
+      'input[name="Phone"]',
+      'input[type="tel"]'
+    ]);
+
+    const tildaArea = getTildaField([
+      'select[name="area"]',
+      'select[name="Area"]',
+      'input[name="area"]',
+      'input[name="Area"]'
+    ]);
+
+    const tildaComment = getTildaField([
+      'textarea[name="comment"]',
+      'textarea[name="Comment"]',
+      'input[name="comment"]',
+      'input[name="Comment"]'
+    ]);
+
+    console.log('Найденные поля Тильды:', {
+      tildaName,
+      tildaPhone,
+      tildaArea,
+      tildaComment
+    });
+
+    if (!tildaName || !tildaPhone || !tildaArea || !tildaComment) {
+      showError('Не найдены нужные поля в форме Тильды. Открой консоль F12.');
+      return;
+    }
+
+    setNativeValue(tildaName, name);
+    setNativeValue(tildaPhone, phone);
+    setNativeValue(tildaArea, area);
+    setNativeValue(tildaComment, comment);
+
+    console.log('Значения после записи:', {
+      tildaName: tildaName.value,
+      tildaPhone: tildaPhone.value,
+      tildaArea: tildaArea.value,
+      tildaComment: tildaComment.value
+    });
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.classList.add('is-loading');
+    }
+
+    const realSubmit =
+      tildaForm.querySelector('button[type="submit"]') ||
+      tildaForm.querySelector('input[type="submit"]') ||
+      tildaForm.querySelector('.t-submit');
+
+    if (!realSubmit) {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('is-loading');
+      }
+      showError('Не найдена кнопка отправки формы Тильды');
+      return;
+    }
+
+    setTimeout(() => {
+      realSubmit.click();
+    }, 100);
+
+    setTimeout(() => {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('is-loading');
+      }
+      if (successBox) successBox.classList.add('is-visible');
+      customForm.reset();
+    }, 2000);
+  });
+});
+</script>
+
+<script>
+document.querySelectorAll('.kp-project-card').forEach(card => {
+  card.addEventListener('click', function(e) {
+    const link = this.getAttribute('data-link');
+    if(link) {
+      window.location.href = link;
+    }
+  });
+});
+</script>
+
