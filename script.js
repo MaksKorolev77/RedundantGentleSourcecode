@@ -132,21 +132,21 @@ function renderFooter(){
               <div class="icon-wrap">${icon('mail')}</div>
               <div style="padding-top:.4rem"><div class="title">info@ultrakarkas.ru</div></div>
             </a>
-            <a href="https://yandex.ru/maps/?text=Одинцово+р.п.+Заречье+ул.+Торговая+2С" target="_blank" rel="noopener" class="contact-item">
+            <a href="https://yandex.ru/maps/-/CPCOQC3w" target="_blank" rel="noopener" class="contact-item">
               <div class="icon-wrap">${icon('pin')}</div>
-              <div><div class="title">Офис продаж:</div><div class="small">Московская обл., г. Одинцово,<br>р.п. Заречье, ул. Торговая, 2С</div></div>
+              <div><div class="title">Офис продаж:</div><div class="small">Московская обл., г. Одинцово,<br>р.п. Заречье, ул. Торговая, 2С</div><div class="small" style="color:var(--primary);margin-top:.2rem">Построить маршрут →</div></div>
             </a>
             <div class="contact-item">
               <div class="icon-wrap">${icon('clock')}</div>
               <div><div class="title">Режим работы:</div><div class="small">Ежедневно: 10:00 – 18:00</div></div>
             </div>
-            <a href="https://wa.me/74993909789" target="_blank" rel="noopener" class="contact-item messenger-item">
-              <div class="icon-wrap messenger-wa">${icon('whatsapp')}</div>
-              <div><div class="title">WhatsApp</div><div class="small">Написать в WhatsApp</div></div>
+            <a href="https://wa.me/79269935818" target="_blank" rel="noopener" class="contact-item messenger-item">
+              <div class="icon-wrap">${icon('whatsapp')}</div>
+              <div><div class="title">WhatsApp</div><div class="small">+7 (926) 993-58-18</div></div>
             </a>
-            <a href="https://t.me/ultrakarkas" target="_blank" rel="noopener" class="contact-item messenger-item">
-              <div class="icon-wrap messenger-tg">${icon('telegram')}</div>
-              <div><div class="title">Telegram</div><div class="small">Написать в Telegram</div></div>
+            <a href="https://t.me/+79269935818" target="_blank" rel="noopener" class="contact-item messenger-item">
+              <div class="icon-wrap">${icon('telegram')}</div>
+              <div><div class="title">Telegram</div><div class="small">+7 (926) 993-58-18</div></div>
             </a>
           </div>
         </div>
