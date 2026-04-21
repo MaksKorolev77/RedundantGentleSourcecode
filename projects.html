@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Каталог проектов каркасных домов — УльтраКаркас</title>
+<meta name="description" content="Все готовые проекты каркасных домов от УльтраКаркас. Адаптация под ваш участок и пожелания.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-inner="1">
+<div id="header-mount"></div>
+
+<main class="inner-main">
+  <section class="container" style="padding-bottom:3rem">
+    <nav class="crumbs">
+      <a href="index.html">Главная</a><span data-icon="chevright"></span>
+      <span class="current">Проекты</span>
+    </nav>
+    <div style="max-width:48rem">
+      <span class="page-eyebrow">Каталог проектов</span>
+      <h1 class="page-title">Все готовые проекты</h1>
+      <p class="page-lead">Выберите готовый проект каркасного дома или закажите индивидуальную разработку. Каждый проект можно адаптировать под ваш участок и пожелания.</p>
+    </div>
+  </section>
+
+  <section class="container" style="padding-bottom:6rem">
+    <div class="cards-grid" id="projects-list"></div>
+
+    <div class="cta-dark">
+      <h2>Не нашли подходящий проект?</h2>
+      <p>Мы спроектируем дом с нуля под ваш участок, бюджет и образ жизни. Адаптация типовых проектов — бесплатно при заключении договора.</p>
+      <button class="btn btn-primary btn-lg" data-modal-open data-modal-title="Индивидуальный проект" data-modal-desc="Опишите идею, мы свяжемся и обсудим детали." data-default-comment="Интересует индивидуальный проект.">Обсудить индивидуальный проект</button>
+    </div>
+  </section>
+</main>
+
+<div id="footer-mount"></div>
+<div id="modal-mount"></div>
+
+<script src="assets/projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

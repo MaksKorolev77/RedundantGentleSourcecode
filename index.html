@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>УльтраКаркас | Строительство каркасных домов под ключ</title>
+<meta name="description" content="Строительство каркасных домов в Москве и МО (Одинцово, Заречье). Готовые проекты, любые комплектации от базовой до чистовой. Надёжно. Тепло. На века.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header-mount"></div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="Каркасный дом в лесу">
+    </div>
+    <div class="container hero-inner">
+      <span class="eyebrow-badge">Надёжно. Тепло. На века.</span>
+      <h1 class="hero-title">Строительство каркасных домов <em>под ключ</em></h1>
+      <p class="hero-lead">Готовые проекты, любые комплектации от базовой до чистовой. Строим в Москве и Московской области.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" data-modal-open data-modal-title="Оставить заявку на расчёт" data-modal-desc="Заполните форму ниже, и мы подготовим для вас предварительный расчёт стоимости.">Получить расчёт</button>
+        <a href="#projects" class="btn btn-outline btn-lg" style="background:hsl(0 0% 100% / .5);backdrop-filter:blur(4px)">Смотреть проекты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TrustStats -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal"><div class="stat-icon" data-icon="award"></div><div class="stat-num-row"><span class="stat-num">18</span><span class="stat-suffix">лет</span></div><span class="stat-label">опыта в строительстве</span></div>
+        <div class="stat-card reveal"><div class="stat-icon" data-icon="home"></div><div class="stat-num-row"><span class="stat-num">147+</span></div><span class="stat-label">домов успешно сдано</span></div>
+        <div class="stat-card reveal"><div class="stat-icon" data-icon="shield"></div><div class="stat-num-row"><span class="stat-num">10</span><span class="stat-suffix">лет</span></div><span class="stat-label">официальной гарантии</span></div>
+        <div class="stat-card reveal"><div class="stat-icon" data-icon="snow"></div><div class="stat-num-row"><span class="stat-num">4</span><span class="stat-suffix">сезона</span></div><span class="stat-label">строим круглый год</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Каталог</span>
+        <h2 class="section-title">Готовые проекты домов</h2>
+        <p class="section-lead">От уютных дачных домиков до просторных семейных резиденций. Любой проект можно адаптировать под ваши пожелания.</p>
+      </div>
+      <div class="cards-grid" id="home-projects-grid"></div>
+      <div style="margin-top:4rem;display:flex;flex-direction:column;gap:1rem;align-items:center;justify-content:center" class="hero-actions">
+        <div style="display:flex;flex-direction:column;gap:1rem;align-items:center" class="hero-actions">
+          <a href="projects.html" class="btn btn-primary btn-lg">Все проекты <span data-icon="arrowright"></span></a>
+          <button class="btn btn-outline btn-lg" data-modal-open data-modal-title="Индивидуальное проектирование" data-modal-desc="Расскажите о доме вашей мечты, и мы разработаем проект специально для вас." data-default-comment="Интересует индивидуальный проект.">Заказать индивидуальный проект</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Комплектации</h2>
+        <p class="section-lead">Три тщательно продуманных варианта. От базового тёплого контура до премиального дома, готового к финишной отделке.</p>
+      </div>
+      <div class="tabs">
+        <div class="tablist" id="packages-tabs">
+          <button class="tab" data-tab="econom">Эконом</button>
+          <button class="tab is-active" data-tab="optimum">Оптимум</button>
+          <button class="tab" data-tab="max">Максимум</button>
+        </div>
+        <div class="tabpanels" id="packages-panels">
+          <div class="tabpanel" id="panel-econom">
+            <div class="tab-head">
+              <div class="tab-head-row">
+                <div><h3>Эконом</h3><p class="meta">Базовый тёплый контур. Идеально для тех, кто хочет завершить отделку самостоятельно.</p></div>
+                <div class="tab-price"><div class="label">Стоимость</div><div class="price">от 40 000 ₽/м²</div></div>
+              </div>
+            </div>
+            <div class="tab-body">
+              <h4>Ключевые особенности:</h4>
+              <ul class="feature-list">
+                <li><span data-icon="check" class="check"></span><span>Наружная отделка: <strong>OSB 12 мм</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Утепление стен: <strong>150 мм</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Каркас: <strong>45×145 мм</strong></span></li>
+                <li class="dim"><span data-icon="minus" class="minus"></span><span>Без внутренней отделки и покрытия пола</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabpanel is-active" id="panel-optimum">
+            <div class="tab-head">
+              <div class="hit-badge">ХИТ ПРОДАЖ</div>
+              <div class="tab-head-row">
+                <div><h3>Оптимум</h3><p class="meta">Золотая середина цены и набора опций. Улучшенное утепление и готовый фасад.</p></div>
+                <div class="tab-price"><div class="label">Стоимость</div><div class="price">от 50 000 ₽/м²</div></div>
+              </div>
+            </div>
+            <div class="tab-body">
+              <h4>Отличия от комплектации Эконом:</h4>
+              <ul class="feature-list">
+                <li><span data-icon="check" class="check"></span><span>Готовый фасад: <strong>Имитация бруса</strong> (карельский профиль)</span></li>
+                <li><span data-icon="check" class="check"></span><span>Внутренняя отделка: <strong>Имитация бруса</strong> + пол <strong>Фанера 18 мм</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Усиленное утепление: <strong>Перекрёстное 150+50=200 мм</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Дополнительно: <strong>Водостоки, снегозадержатели, софиты</strong></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabpanel" id="panel-max">
+            <div class="tab-head">
+              <div class="tab-head-row">
+                <div><h3>Максимум</h3><p class="meta">Премиальные материалы и усиленный каркас. Максимальная энергоэффективность.</p></div>
+                <div class="tab-price"><div class="label">Стоимость</div><div class="price">от 60 000 ₽/м²</div></div>
+              </div>
+            </div>
+            <div class="tab-body">
+              <h4>Отличия от комплектации Оптимум:</h4>
+              <ul class="feature-list">
+                <li><span data-icon="check" class="check"></span><span>Премиум фасад: <strong>Фиброцементный сайдинг</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Отделка под чистовую: <strong>OSB + Гипсокартон</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Максимальное утепление: Стены <strong>250 мм</strong>, пол/кровля <strong>250 мм</strong></span></li>
+                <li><span data-icon="check" class="check"></span><span>Усиленный каркас стен: <strong>Доска 45×190 мм</strong></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section bg-muted-solid">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Как мы строим</h2>
+        <p class="section-lead">Прозрачный процесс от первой встречи до передачи ключей. Никаких скрытых платежей и задержек.</p>
+      </div>
+      <div class="process">
+        <div class="line"></div>
+        <div class="process-step right reveal"><div class="process-num">01</div><div class="process-content"><div class="process-box"><h3>Проектирование и договор</h3><p>Согласовываем архитектуру, планировку и состав работ. Фиксируем стоимость, сроки и этапы строительства.</p></div></div></div>
+        <div class="process-step left reveal"><div class="process-num">02</div><div class="process-content"><div class="process-box"><h3>Возведение фундамента</h3><p>Выполняем устройство фундамента с учётом типа грунта, нагрузок и особенностей участка.</p></div></div></div>
+        <div class="process-step right reveal"><div class="process-num">03</div><div class="process-content"><div class="process-box"><h3>Каркас, кровля и инженерия</h3><p>Собираем силовой каркас, монтируем кровлю, утепляем конструкцию. Монтируем инженерные системы.</p></div></div></div>
+        <div class="process-step left reveal"><div class="process-num">04</div><div class="process-content"><div class="process-box"><h3>Отделочные работы</h3><p>Выполняем внутреннюю и внешнюю отделку: от черновых работ до финишного покрытия и фасада.</p></div></div></div>
+        <div class="process-step right reveal"><div class="process-num">05</div><div class="process-content"><div class="process-box"><h3>Сдача готового дома</h3><p>Проводим контроль качества, подписываем акт приёма-передачи дома и отдаём Вам ключи.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section bg-muted-solid">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Что мы делаем</span>
+        <h2 class="section-title">Наши услуги</h2>
+        <p class="section-lead">Берём на себя все этапы: от первого наброска на бумаге до финальной уборки перед новосельем.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="service-card reveal">
+          <div class="service-icon" data-icon="pen"></div>
+          <h3>Индивидуальное проектирование</h3>
+          <ul class="bullet-list">
+            <li><span class="bullet-dot" data-icon="check"></span>Создание проекта с нуля под ваш образ жизни</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Адаптация и доработка типовых проектов</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Архитектурный раздел (АР)</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Реалистичная 3D-визуализация будущего дома</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon" data-icon="hammer"></div>
+          <h3>Строительство под ключ</h3>
+          <ul class="bullet-list">
+            <li><span class="bullet-dot" data-icon="check"></span>Монтаж надёжного фундамента</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Сборка прочного силового каркаса</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Устройство кровельной системы</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Многослойное утепление и пароизоляция</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Установка окон и дверей</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Разводка инженерных систем</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon" data-icon="paint"></div>
+          <h3>Отделочные работы</h3>
+          <ul class="bullet-list">
+            <li><span class="bullet-dot" data-icon="check"></span>Внутренняя черновая и чистовая отделка</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Монтаж напольных покрытий (ламинат, плитка)</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Поклейка обоев и покраска стен</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Внешняя отделка фасада (сайдинг, планкен)</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Устройство натяжных и подвесных потолков</li>
+            <li><span class="bullet-dot" data-icon="check"></span>Установка дверей, плинтусов</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <p class="section-lead">Строим дома, в которых хочется жить. Без компромиссов в качестве материалов и соблюдении технологий.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal"><div class="why-icon" data-icon="shield"></div><h3>Прочный несущий каркас</h3><p>Используем только сухую строганную доску камерной сушки. Каркас не ведёт и не крутит со временем.</p></div>
+        <div class="why-card reveal"><div class="why-icon" data-icon="zap"></div><h3>Энергоэффективность</h3><p>Перекрёстное утепление от 200 мм исключает мостики холода. Зимой тепло, летом прохладно.</p></div>
+        <div class="why-card reveal"><div class="why-icon" data-icon="maximize"></div><h3>Продуманные планировки</h3><p>Каждый квадратный метр используется с пользой. Никаких тёмных коридоров и тесных комнат.</p></div>
+        <div class="why-card reveal"><div class="why-icon" data-icon="key"></div><h3>Строительство под ключ</h3><p>От фундамента до розеток. Вы получаете готовый дом, в который можно заезжать и жить.</p></div>
+        <div class="why-card reveal"><div class="why-icon" data-icon="clock"></div><h3>Фиксированные сроки</h3><p>Точный график работ прописан в договоре. Строим в среднем от 2 до 6 месяцев.</p></div>
+        <div class="why-card reveal"><div class="why-icon" data-icon="checkc"></div><h3>Контроль качества</h3><p>Технадзор принимает каждый скрытый этап работ с фотоотчётом для заказчика.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-form">
+          <h2>Калькулятор стоимости</h2>
+          <p>Выберите площадь и комплектацию, чтобы узнать примерную стоимость строительства вашего будущего дома.</p>
+          <div class="calc-row">
+            <label class="head">Площадь дома: <span id="calc-area-v">100 м²</span></label>
+            <input type="range" min="50" max="300" step="5" value="100" class="calc-range" id="calc-area">
+            <div class="calc-range-bounds"><span>50 м²</span><span>300 м²</span></div>
+          </div>
+          <div class="calc-row">
+            <label class="head" style="display:block;margin-bottom:1rem">Комплектация</label>
+            <div class="pkg-toggle" id="calc-pkg">
+              <button data-pkg="econom">Эконом</button>
+              <button data-pkg="optimum" class="is-active">Оптимум</button>
+              <button data-pkg="max">Максимум</button>
+            </div>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="lbl">Примерная стоимость:</div>
+          <div class="val" id="calc-price">~ 5 000 000 ₽</div>
+          <div class="perm" id="calc-perm">50 000 ₽ за квадратный метр</div>
+          <button id="calc-cta" class="btn btn-primary btn-lg btn-block" data-modal-open data-modal-title="Обсудить проект">Получить точный расчёт</button>
+          <small>Не является публичной офертой. Итоговая стоимость зависит от особенностей проекта и участка.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="faq">
+        <div class="faq-left">
+          <h2>Частые<br>вопросы</h2>
+          <p>Собрали ответы на самые популярные вопросы о строительстве каркасных домов.</p>
+        </div>
+        <div class="faq-right">
+          <div class="faq-item"><button class="faq-q">Какой фундамент нужен для каркасного дома?<span data-icon="chevdown"></span></button><div class="faq-a"><p>В большинстве случаев подбирается свайный или свайно-ростверковый фундамент. Конкретное решение зависит от геологии участка и параметров дома.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Можно ли строить зимой?<span data-icon="chevdown"></span></button><div class="faq-a"><p>Да. Каркасная технология позволяет вести большинство работ круглый год при соблюдении технологии монтажа. Отсутствие мокрых процессов делает зимнюю стройку безопасной.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Сколько времени занимает строительство?<span data-icon="chevdown"></span></button><div class="faq-a"><p>Срок зависит от площади, архитектуры и комплектации. В среднем строительство занимает от 2 до 6 месяцев от забивки первой сваи до сдачи ключей.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Можно ли изменить планировку под себя?<span data-icon="chevdown"></span></button><div class="faq-a"><p>Да, мы можем адаптировать любой типовой проект или разработать индивидуальное решение с нуля, учитывая ваши пожелания и особенности участка.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact">
+    <div class="contact-bg"><img src="images/hero.png" alt=""></div>
+    <div class="container">
+      <div class="contact-card">
+        <div class="head">
+          <h2>Готовы обсудить ваш будущий дом?</h2>
+          <p>Оставьте заявку, и наш инженер свяжется с вами для подробной консультации и предварительного расчёта. Это бесплатно и ни к чему не обязывает.</p>
+        </div>
+        <div class="form-wrap">
+          <button class="btn btn-primary btn-lg btn-block" data-modal-open data-modal-title="Оставить заявку на расчёт" data-modal-desc="Заполните форму ниже, и мы подготовим для вас предварительный расчёт стоимости.">Открыть форму заявки</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-mount"></div>
+<div id="modal-mount"></div>
+
+<script src="assets/projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
