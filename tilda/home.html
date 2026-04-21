@@ -1,0 +1,457 @@
+<!--
+  УльтраКаркас — Главная страница
+  Tilda T123 Zero Block: вставьте в поле «HTML»
+  JS: вставьте содержимое home.js в поле «JS»
+  CSS: вставьте global.css в Настройки сайта → Свои стили
+
+  ВАЖНО: hero-изображение (images/hero.png) загрузите в Tilda CDN
+  и замените атрибут src ниже на полученный URL.
+-->
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <!-- TODO: замените src на URL изображения из Tilda CDN -->
+    <img src="images/hero.png" alt="Каркасный дом в лесу">
+  </div>
+  <div class="container hero-inner">
+    <span class="eyebrow-badge">Надёжно. Тепло. На века.</span>
+    <h1 class="hero-title">Строительство каркасных домов <em>под ключ</em></h1>
+    <p class="hero-lead">Готовые проекты, любые комплектации от базовой до чистовой. Строим в Москве и Московской области.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary btn-lg" data-modal-open data-modal-title="Оставить заявку на расчёт" data-modal-desc="Заполните форму ниже, и мы подготовим для вас предварительный расчёт стоимости.">Получить расчёт</button>
+      <a href="#projects" class="btn btn-outline btn-lg" style="background:hsl(0 0% 100% / .5);backdrop-filter:blur(4px)">Смотреть проекты</a>
+    </div>
+  </div>
+</section>
+
+<!-- TrustStats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal"><div class="stat-icon" data-icon="award"></div><div class="stat-num-row"><span class="stat-num">18</span><span class="stat-suffix">лет</span></div><span class="stat-label">опыта в строительстве</span></div>
+      <div class="stat-card reveal"><div class="stat-icon" data-icon="home"></div><div class="stat-num-row"><span class="stat-num">147+</span></div><span class="stat-label">домов успешно сдано</span></div>
+      <div class="stat-card reveal"><div class="stat-icon" data-icon="shield"></div><div class="stat-num-row"><span class="stat-num">10</span><span class="stat-suffix">лет</span></div><span class="stat-label">официальной гарантии</span></div>
+      <div class="stat-card reveal"><div class="stat-icon" data-icon="snow"></div><div class="stat-num-row"><span class="stat-num">4</span><span class="stat-suffix">сезона</span></div><span class="stat-label">строим круглый год</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Каталог</span>
+      <h2 class="section-title">Готовые проекты домов</h2>
+      <p class="section-lead">От уютных дачных домиков до просторных семейных резиденций. Любой проект можно адаптировать под ваши пожелания.</p>
+    </div>
+    <div class="cards-grid" id="home-projects-grid"></div>
+    <div class="split-cta">
+      <div class="split-cta-card split-cta-primary">
+        <div class="scc-icon" data-icon="pen"></div>
+        <h3>Не нашли подходящий проект?</h3>
+        <p>Разработаем дом с нуля под ваш участок, бюджет и образ жизни. Адаптация типовых проектов&nbsp;— бесплатно при заключении договора.</p>
+        <button class="btn btn-lg" style="background:var(--primary);color:#fff;font-weight:700"
+          data-modal-open
+          data-modal-title="Индивидуальный проект"
+          data-modal-desc="Опишите идею — мы свяжемся и обсудим детали."
+          data-default-comment="Интересует индивидуальный проект.">
+          Заказать индивидуальный проект
+        </button>
+      </div>
+      <div class="split-cta-card split-cta-outline">
+        <div class="scc-icon" data-icon="zap"></div>
+        <h3>Уже есть готовый проект?</h3>
+        <p>Рассчитаем точную стоимость строительства по вашим чертежам или эскизу. Пришлите проект&nbsp;— ответим с расчётом в течение дня.</p>
+        <button class="btn btn-primary btn-lg"
+          data-modal-open
+          data-modal-title="Расчёт по вашему проекту"
+          data-modal-desc="Пришлите ссылку или опишите проект — рассчитаем стоимость строительства."
+          data-default-comment="Хочу рассчитать стоимость по своему проекту.">
+          Рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <div style="margin-top:2rem;text-align:center">
+      <!-- TODO: замените /projects/ на URL страницы проектов в Tilda -->
+      <a href="/projects/" class="btn btn-outline btn-lg">Все проекты <span data-icon="arrowright"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="packages" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Комплектации</h2>
+      <p class="section-lead">Три тщательно продуманных варианта. От базового тёплого контура до премиального дома, готового к финишной отделке.</p>
+    </div>
+    <div class="tabs">
+      <div class="tablist" id="packages-tabs">
+        <button class="tab" data-tab="econom">Эконом</button>
+        <button class="tab is-active" data-tab="optimum">Оптимум</button>
+        <button class="tab" data-tab="max">Максимум</button>
+      </div>
+      <div class="tabpanels" id="packages-panels">
+        <div class="tabpanel" id="panel-econom">
+          <div class="tab-head">
+            <div class="tab-head-row">
+              <div><h3>Эконом</h3><p class="meta">Базовый тёплый контур. Идеально для тех, кто хочет завершить отделку самостоятельно.</p></div>
+              <div class="tab-price"><div class="label">Стоимость</div><div class="price">от 40 000 ₽/м²</div></div>
+            </div>
+          </div>
+          <div class="tab-body">
+            <h4>Ключевые особенности:</h4>
+            <ul class="feature-list">
+              <li><span data-icon="check" class="check"></span><span>Наружная отделка: <strong>OSB 12 мм</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Утепление стен: <strong>150 мм</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Каркас: <strong>45×145 мм</strong></span></li>
+              <li class="dim"><span data-icon="minus" class="minus"></span><span>Без внутренней отделки и покрытия пола</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabpanel is-active" id="panel-optimum">
+          <div class="tab-head">
+            <div class="hit-badge">ХИТ ПРОДАЖ</div>
+            <div class="tab-head-row">
+              <div><h3>Оптимум</h3><p class="meta">Золотая середина цены и набора опций. Улучшенное утепление и готовый фасад.</p></div>
+              <div class="tab-price"><div class="label">Стоимость</div><div class="price">от 50 000 ₽/м²</div></div>
+            </div>
+          </div>
+          <div class="tab-body">
+            <h4>Отличия от комплектации Эконом:</h4>
+            <ul class="feature-list">
+              <li><span data-icon="check" class="check"></span><span>Готовый фасад: <strong>Имитация бруса</strong> (карельский профиль)</span></li>
+              <li><span data-icon="check" class="check"></span><span>Внутренняя отделка: <strong>Имитация бруса</strong> + пол <strong>Фанера 18 мм</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Усиленное утепление: <strong>Перекрёстное 150+50=200 мм</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Дополнительно: <strong>Водостоки, снегозадержатели, софиты</strong></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabpanel" id="panel-max">
+          <div class="tab-head">
+            <div class="tab-head-row">
+              <div><h3>Максимум</h3><p class="meta">Премиальные материалы и усиленный каркас. Максимальная энергоэффективность.</p></div>
+              <div class="tab-price"><div class="label">Стоимость</div><div class="price">от 60 000 ₽/м²</div></div>
+            </div>
+          </div>
+          <div class="tab-body">
+            <h4>Отличия от комплектации Оптимум:</h4>
+            <ul class="feature-list">
+              <li><span data-icon="check" class="check"></span><span>Премиум фасад: <strong>Фиброцементный сайдинг</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Отделка под чистовую: <strong>OSB + Гипсокартон</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Максимальное утепление: Стены <strong>250 мм</strong>, пол/кровля <strong>250 мм</strong></span></li>
+              <li><span data-icon="check" class="check"></span><span>Усиленный каркас стен: <strong>Доска 45×190 мм</strong></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Compare toggle -->
+      <div style="text-align:center;margin-top:.5rem">
+        <button class="compare-toggle" id="compare-toggle">
+          Показать подробную таблицу сравнения
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <div class="compare-wrap" id="compare-wrap">
+        <div class="compare-table-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Характеристика</th>
+                <th>Эконом</th>
+                <th class="optimum-col">Оптимум</th>
+                <th>Максимум</th>
+              </tr>
+            </thead>
+            <tbody id="compare-tbody"></tbody>
+            <tfoot>
+              <tr><td colspan="4">* Разводка электрики, водоснабжения, отопления и канализации рассчитывается индивидуально. Во всех комплектациях предусмотрены закладные.</td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section bg-muted-solid">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Как мы строим</h2>
+      <p class="section-lead">Прозрачный процесс от первой встречи до передачи ключей. Никаких скрытых платежей и задержек.</p>
+    </div>
+    <div class="process">
+      <div class="line"></div>
+      <div class="process-step right reveal"><div class="process-num">01</div><div class="process-content"><div class="process-box"><h3>Проектирование и договор</h3><p>Согласовываем архитектуру, планировку и состав работ. Фиксируем стоимость, сроки и этапы строительства.</p></div></div></div>
+      <div class="process-step left reveal"><div class="process-num">02</div><div class="process-content"><div class="process-box"><h3>Возведение фундамента</h3><p>Выполняем устройство фундамента с учётом типа грунта, нагрузок и особенностей участка.</p></div></div></div>
+      <div class="process-step right reveal"><div class="process-num">03</div><div class="process-content"><div class="process-box"><h3>Каркас, кровля и инженерия</h3><p>Собираем силовой каркас, монтируем кровлю, утепляем конструкцию. Монтируем инженерные системы.</p></div></div></div>
+      <div class="process-step left reveal"><div class="process-num">04</div><div class="process-content"><div class="process-box"><h3>Отделочные работы</h3><p>Выполняем внутреннюю и внешнюю отделку: от черновых работ до финишного покрытия и фасада.</p></div></div></div>
+      <div class="process-step right reveal"><div class="process-num">05</div><div class="process-content"><div class="process-box"><h3>Сдача готового дома</h3><p>Проводим контроль качества, подписываем акт приёма-передачи дома и отдаём Вам ключи.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section bg-muted-solid">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Что мы делаем</span>
+      <h2 class="section-title">Наши услуги</h2>
+      <p class="section-lead">Берём на себя все этапы: от первого наброска на бумаге до финальной уборки перед новосельём.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="service-card reveal">
+        <div class="service-icon" data-icon="pen"></div>
+        <h3>Индивидуальное проектирование</h3>
+        <div class="service-price"><span class="amount">от 500 ₽</span><span class="unit">за кв. м</span></div>
+        <ul class="bullet-list">
+          <li><span class="bullet-dot" data-icon="check"></span>Создание проекта с нуля под ваш образ жизни</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Адаптация и доработка типовых проектов</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Архитектурный раздел (АР)</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Реалистичная 3D-визуализация будущего дома</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon" data-icon="hammer"></div>
+        <h3>Строительство под ключ</h3>
+        <div class="service-price"><span class="amount">от 40 000 ₽</span><span class="unit">за кв. м</span></div>
+        <ul class="bullet-list">
+          <li><span class="bullet-dot" data-icon="check"></span>Монтаж надёжного фундамента</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Сборка прочного силового каркаса</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Устройство кровельной системы</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Многослойное утепление и пароизоляция</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Установка окон и дверей</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Разводка инженерных систем</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon" data-icon="paint"></div>
+        <h3>Отделочные работы</h3>
+        <div class="service-price"><span class="amount">Цена договорная</span></div>
+        <ul class="bullet-list">
+          <li><span class="bullet-dot" data-icon="check"></span>Внутренняя черновая и чистовая отделка</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Монтаж напольных покрытий (ламинат, плитка)</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Поклейка обоев и покраска стен</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Внешняя отделка фасада (сайдинг, планкен)</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Устройство натяжных и подвесных потолков</li>
+          <li><span class="bullet-dot" data-icon="check"></span>Установка дверей, плинтусов</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <p class="section-lead">Строим дома, в которых хочется жить. Без компромиссов в качестве материалов и соблюдении технологий.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon" data-icon="shield"></div><h3>Прочный несущий каркас</h3><p>Используем только сухую строганную доску камерной сушки. Каркас не ведёт и не крутит со временем.</p></div>
+      <div class="why-card reveal"><div class="why-icon" data-icon="zap"></div><h3>Энергоэффективность</h3><p>Перекрёстное утепление от 200 мм исключает мостики холода. Зимой тепло, летом прохладно.</p></div>
+      <div class="why-card reveal"><div class="why-icon" data-icon="maximize"></div><h3>Продуманные планировки</h3><p>Каждый квадратный метр используется с пользой. Никаких тёмных коридоров и тесных комнат.</p></div>
+      <div class="why-card reveal"><div class="why-icon" data-icon="key"></div><h3>Строительство под ключ</h3><p>От фундамента до розеток. Вы получаете готовый дом, в который можно заезжать и жить.</p></div>
+      <div class="why-card reveal"><div class="why-icon" data-icon="clock"></div><h3>Фиксированные сроки</h3><p>Точный график работ прописан в договоре. Строим в среднем от 2 до 6 месяцев.</p></div>
+      <div class="why-card reveal"><div class="why-icon" data-icon="checkc"></div><h3>Контроль качества</h3><p>Технадзор принимает каждый скрытый этап работ с фотоотчётом для заказчика.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Calculator -->
+<section id="calculator" class="section">
+  <div class="container">
+    <div class="calc-card">
+      <div class="calc-form">
+        <h2>Калькулятор стоимости</h2>
+        <p>Выберите площадь и комплектацию, чтобы узнать примерную стоимость строительства вашего будущего дома.</p>
+        <div class="calc-row">
+          <label class="head">Площадь дома: <span id="calc-area-v">100 м²</span></label>
+          <input type="range" min="50" max="300" step="5" value="100" class="calc-range" id="calc-area">
+          <div class="calc-range-bounds"><span>50 м²</span><span>300 м²</span></div>
+        </div>
+        <div class="calc-row">
+          <label class="head" style="display:block;margin-bottom:1rem">Комплектация</label>
+          <div class="pkg-toggle" id="calc-pkg">
+            <button data-pkg="econom">Эконом</button>
+            <button data-pkg="optimum" class="is-active">Оптимум</button>
+            <button data-pkg="max">Максимум</button>
+          </div>
+        </div>
+      </div>
+      <div class="calc-result">
+        <div class="lbl">Примерная стоимость:</div>
+        <div class="val" id="calc-price">~ 5 000 000 ₽</div>
+        <div class="perm" id="calc-perm">50 000 ₽ за квадратный метр</div>
+        <button id="calc-cta" class="btn btn-primary btn-lg btn-block" data-modal-open data-modal-title="Обсудить проект">Получить точный расчёт</button>
+        <small>Не является публичной офертой. Итоговая стоимость зависит от особенностей проекта и участка.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="faq">
+      <div class="faq-left">
+        <h2>Частые<br>вопросы</h2>
+        <p>Собрали ответы на самые популярные вопросы о строительстве каркасных домов.</p>
+      </div>
+      <div class="faq-right">
+        <div class="faq-item"><button class="faq-q">Какой фундамент нужен для каркасного дома?<span data-icon="chevdown"></span></button><div class="faq-a"><p>В большинстве случаев подбирается свайный или свайно-ростверковый фундамент. Конкретное решение зависит от геологии участка и параметров дома.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Можно ли строить зимой?<span data-icon="chevdown"></span></button><div class="faq-a"><p>Да. Каркасная технология позволяет вести большинство работ круглый год при соблюдении технологии монтажа. Отсутствие мокрых процессов делает зимнюю стройку безопасной.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Сколько времени занимает строительство?<span data-icon="chevdown"></span></button><div class="faq-a"><p>Срок зависит от площади, архитектуры и комплектации. В среднем строительство занимает от 2 до 6 месяцев от забивки первой сваи до сдачи ключей.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Можно ли изменить планировку под себя?<span data-icon="chevdown"></span></button><div class="faq-a"><p>Да, мы можем адаптировать любой типовой проект или разработать индивидуальное решение с нуля, учитывая ваши пожелания и особенности участка.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact form -->
+<section class="section contact">
+  <!-- TODO: замените src фонового изображения на URL из Tilda CDN -->
+  <div class="contact-bg"><img src="images/hero.png" alt=""></div>
+  <div class="container">
+    <div class="contact-card">
+      <div class="head">
+        <h2>Готовы обсудить ваш будущий дом?</h2>
+        <p>Оставьте заявку, и наш инженер свяжется с вами для подробной консультации и предварительного расчёта. Это бесплатно и ни к чему не обязывает.</p>
+      </div>
+      <div class="form-wrap">
+        <div id="contact-form-wrap">
+          <form id="contact-form" class="lead-form" novalidate>
+            <div class="lead-row">
+              <div class="field"><label>Имя*</label><input name="name" placeholder="Иван Иванов" required minlength="2"><div class="err">Введите ваше имя</div></div>
+              <div class="field"><label>Телефон*</label><input name="phone" type="tel" placeholder="+7 (999) 000-00-00" required minlength="10"><div class="err">Введите корректный телефон</div></div>
+            </div>
+            <div class="lead-row">
+              <div class="field"><label>Желаемая площадь*</label>
+                <select name="area" required>
+                  <option value="">Выберите площадь</option>
+                  <option value="до 100">до 100 м²</option>
+                  <option value="100-150">100–150 м²</option>
+                  <option value="150-200">150–200 м²</option>
+                  <option value="200-250">200–250 м²</option>
+                  <option value="250+">250+ м²</option>
+                </select><div class="err">Выберите желаемую площадь</div></div>
+              <div class="field"><label>Комплектация</label>
+                <select name="package">
+                  <option value="">Выберите комплектацию</option>
+                  <option value="эконом">Эконом</option>
+                  <option value="оптимум">Оптимум</option>
+                  <option value="максимум">Максимум</option>
+                  <option value="подскажите">Подскажите вы</option>
+                </select></div>
+            </div>
+            <div class="field"><label>Комментарий</label><textarea name="comment" placeholder="Опишите ваши пожелания, наличие участка и т.д."></textarea></div>
+            <div class="consent">
+              <input type="checkbox" name="consent" id="contact-consent-cb" checked>
+              <!-- TODO: замените /privacy/ на URL страницы политики конфиденциальности в Tilda -->
+              <label for="contact-consent-cb">Отправляя форму, даю согласие на обработку моих персональных данных. <a href="/privacy/" target="_blank">Политика конфиденциальности</a></label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Получить расчёт</button>
+          </form>
+        </div>
+        <div class="lead-success" id="contact-success" style="display:none">
+          <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"/><polyline points="9 12 12 15 16 9"/></svg></div>
+          <h3>Заявка отправлена!</h3>
+          <p>Менеджер свяжется с вами в течение рабочего дня.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacts block -->
+<section id="contacts" class="section contacts-block">
+  <div class="container">
+    <div class="contacts-grid">
+      <div class="contacts-info">
+        <h2>Контакты</h2>
+        <p class="sub">Свяжитесь с нами любым удобным способом — ответим быстро.</p>
+        <div class="contacts-list">
+
+          <a href="tel:+74993909789" class="ci">
+            <div class="ci-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="ci-body">
+              <div class="lbl">Телефон</div>
+              <div class="val">+7 (499) 390-97-89</div>
+              <div class="val small">Звонок бесплатный</div>
+            </div>
+          </a>
+
+          <a href="mailto:info@ultrakarkas.ru" class="ci">
+            <div class="ci-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            </div>
+            <div class="ci-body">
+              <div class="lbl">Email</div>
+              <div class="val">info@ultrakarkas.ru</div>
+              <div class="val small">Написать письмо</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/79269935818" target="_blank" rel="noopener" class="ci">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" class="icon wa-icon" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.858L0 24l6.335-1.612A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.366l-.36-.214-3.735.981.998-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+            </div>
+            <div class="ci-body">
+              <div class="lbl">WhatsApp</div>
+              <div class="val">+7 (926) 993-58-18</div>
+              <div class="val small">Написать в WhatsApp</div>
+            </div>
+          </a>
+
+          <a href="https://t.me/+79269935818" target="_blank" rel="noopener" class="ci">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" class="icon tg-icon" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+            </div>
+            <div class="ci-body">
+              <div class="lbl">Telegram</div>
+              <div class="val">+7 (926) 993-58-18</div>
+              <div class="val small">Написать в Telegram</div>
+            </div>
+          </a>
+
+          <a href="https://yandex.ru/maps/-/CPCOQC3w" target="_blank" rel="noopener" class="ci">
+            <div class="ci-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="ci-body">
+              <div class="lbl">Офис продаж</div>
+              <div class="val">Московская обл., г. Одинцово</div>
+              <div class="val small">р.п. Заречье, ул. Торговая, 2С</div>
+              <div class="val small" style="color:var(--primary);margin-top:.25rem">Построить маршрут →</div>
+            </div>
+          </a>
+
+          <div class="ci">
+            <div class="ci-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="ci-body">
+              <div class="lbl">Режим работы</div>
+              <div class="val">Ежедневно: 10:00 – 18:00</div>
+              <div class="val small">Без выходных</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contacts-map">
+        <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=162576044910" width="560" height="400" frameborder="0" allowfullscreen style="width:100%;height:22rem;border:none;display:block"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal mount (обязательно) -->
+<div id="modal-mount"></div>
