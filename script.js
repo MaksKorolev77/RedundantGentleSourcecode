@@ -534,6 +534,84 @@ function setupLightbox(p){
   });
 }
 
+// ============ Comparison table ============
+const COMPARE_FEATURES = [
+  { name:"Фундамент", econom:"Ж/б забивные сваи 150×150×3000", optimum:"Ж/б забивные сваи 150×150×3000", max:"Ж/б забивные сваи 150×150×3000" },
+  { name:"Нижняя обвязка", econom:"Сухая строганная доска 150×150 мм", optimum:"Сухая строганная доска 150×150 мм", max:"Сухая строганная доска 150×150 мм" },
+  { name:"Лаги пола", econom:"Сухая доска 45×190 мм", optimum:"Сухая доска 45×190 мм", max:"Сухая доска 45×190 мм" },
+  { name:"Утепление пола", econom:"Каменная вата 200 мм", optimum:"Каменная вата 200 мм", max:"Каменная вата 250 мм", h:"max" },
+  { name:"Черный пол", econom:"Обрезная доска 20×100 мм", optimum:"Обрезная доска 20×100 мм", max:"Обрезная доска 20×100 мм" },
+  { name:"Покрытие пола", econom:false, optimum:"Фанера 18 мм", max:"Фанера 18 мм", h:"optimum" },
+  { name:"Каркас стен", econom:"Доска 45×145 мм", optimum:"Доска 45×145 мм + брусок 40×50 мм", max:"Доска 45×190 мм + брусок 40×50 мм", h:"all" },
+  { name:"Утепление стен", econom:"Каменная вата 150 мм", optimum:"Каменная вата 150+50=200 мм", max:"Каменная вата 200+50=250 мм", h:"all" },
+  { name:"Утепление перегородок", econom:"Каменная вата 100 мм", optimum:"Каменная вата 100 мм", max:"Каменная вата 100 мм" },
+  { name:"Внутренняя отделка", econom:false, optimum:"Имитация бруса", max:"OSB + Гипсокартон", h:"optimum" },
+  { name:"Наружная отделка", econom:"OSB 12 мм", optimum:"Имитация бруса", max:"Фиброцементный сайдинг", h:"all" },
+  { name:"Отделка потолка", econom:false, optimum:"OSB 9 мм", max:"OSB 9 мм", h:"optimum" },
+  { name:"Утепление потолка", econom:"Каменная вата 200 мм", optimum:"Каменная вата 200 мм", max:"Каменная вата 250 мм", h:"max" },
+  { name:"Окна", econom:"Пластиковые ПВХ 70 Рехау", optimum:"Пластиковые ПВХ 70 Рехау", max:"Пластиковые ПВХ 70 Рехау" },
+  { name:"Дверь", econom:"Металлическая с терморазрывом 100 мм", optimum:"Металлическая с терморазрывом 100 мм", max:"Металлическая с терморазрывом 100 мм" },
+  { name:"Стропило", econom:"Сухая доска 45×190 мм", optimum:"Сухая доска 45×190 мм", max:"Сухая доска 45×190 мм" },
+  { name:"Кровля", econom:"Металлочерепица 0.5 мм", optimum:"Металлочерепица 0.5 мм", max:"Металлочерепица 0.5 мм" },
+  { name:"Утепление кровли", econom:"Каменная вата 200 мм", optimum:"Каменная вата 200 мм", max:"Каменная вата 250 мм", h:"max" },
+  { name:"Водостоки", econom:false, optimum:true, max:true, h:"optimum" },
+  { name:"Снегозадержатели", econom:false, optimum:true, max:true, h:"optimum" },
+  { name:"Подшив свесов", econom:false, optimum:"Пластиковые софиты", max:"Пластиковые софиты", h:"optimum" },
+];
+function cellHtml(val, isPrimary){
+  if (val === false) return `<span style="color:var(--muted-fg);opacity:.5">${icon('minus')}</span>`;
+  if (val === true) return `<span style="color:var(--primary)">${icon('check')}</span>`;
+  return `<span${isPrimary?' style="font-weight:600;color:var(--primary)"':''}>${esc(val)}</span>`;
+}
+function buildCompareTable(){
+  const tbody = qs('#compare-tbody');
+  if (!tbody) return;
+  tbody.innerHTML = COMPARE_FEATURES.map(f => {
+    const eP = f.h === 'all';
+    const oP = f.h === 'optimum' || f.h === 'all';
+    const mP = f.h === 'max' || f.h === 'all';
+    return `<tr>
+      <td style="font-weight:500">${esc(f.name)}</td>
+      <td>${cellHtml(f.econom, eP)}</td>
+      <td class="optimum-col">${cellHtml(f.optimum, oP)}</td>
+      <td>${cellHtml(f.max, mP)}</td>
+    </tr>`;
+  }).join('');
+
+  const btn = qs('#compare-toggle');
+  const wrap = qs('#compare-wrap');
+  if (!btn || !wrap) return;
+  btn.addEventListener('click', () => {
+    const open = wrap.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.childNodes[0].textContent = open ? 'Скрыть подробное сравнение' : 'Показать подробную таблицу сравнения';
+  });
+}
+
+// ============ Inline contact form ============
+function setupContactForm(){
+  const form = qs('#contact-form');
+  if (!form) return;
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let ok = true;
+    qsa('.field', form).forEach(fld => {
+      const inp = fld.querySelector('input,select,textarea');
+      if (!inp) return;
+      fld.classList.remove('has-err');
+      if (inp.hasAttribute('required')) {
+        const v = inp.value.trim();
+        if (!v || (inp.minLength && v.length < inp.minLength)) { fld.classList.add('has-err'); ok=false; }
+      }
+    });
+    if (!form.querySelector('[name="consent"]').checked) { ok=false; alert('Необходимо согласие на обработку данных'); }
+    if (!ok) return;
+    console.log('Contact form submitted:', Object.fromEntries(new FormData(form).entries()));
+    qs('#contact-form-wrap').style.display='none';
+    qs('#contact-success').style.display='';
+  });
+}
+
 // ============ Init ============
 document.addEventListener('DOMContentLoaded', () => {
   const inner = document.body.dataset.inner === '1';
@@ -545,6 +623,8 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHome();
   renderProjectsList();
   renderProjectDetail();
+  buildCompareTable();
+  setupContactForm();
 
   setupReveal();
 

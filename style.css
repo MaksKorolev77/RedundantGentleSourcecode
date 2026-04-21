@@ -421,6 +421,26 @@ a.contact-item:hover .icon-wrap .icon{color:var(--primary)}
 .lightbox .nav.next{right:1.5rem}
 .lightbox .counter{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);color:hsl(0 0% 100% / .8);font-size:.875rem;background:rgba(0,0,0,.5);padding:.25rem .75rem;border-radius:9999px}
 
+/* ============ Comparison table ============ */
+.compare-toggle{display:inline-flex;align-items:center;gap:.5rem;color:var(--primary);font-weight:500;background:transparent;padding:.5rem 0;transition:opacity .15s;font-size:1rem}
+.compare-toggle:hover{opacity:.8}
+.compare-toggle .chev{width:1rem;height:1rem;transition:transform .3s}
+.compare-toggle.is-open .chev{transform:rotate(180deg)}
+.compare-wrap{overflow:hidden;max-height:0;transition:max-height .5s ease;margin-top:0}
+.compare-wrap.is-open{max-height:3000px;margin-top:2rem}
+.compare-table-scroll{overflow-x:auto}
+.compare-table{width:100%;min-width:700px;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:.75rem;overflow:hidden;box-shadow:var(--shadow-sm)}
+.compare-table th,.compare-table td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid var(--border);font-size:.875rem}
+.compare-table th{background:hsl(0 0% 96% / .6);font-weight:700}
+.compare-table th:not(:first-child){text-align:center}
+.compare-table td:not(:first-child){text-align:center}
+.compare-table th.optimum-col{background:hsl(28 100% 48% / .06);color:var(--primary)}
+.compare-table td.optimum-col{background:hsl(28 100% 48% / .04)}
+.compare-table td.primary{font-weight:600;color:var(--primary)}
+.compare-table tbody tr:hover{background:hsl(0 0% 96% / .5)}
+.compare-table tfoot td{background:hsl(0 0% 96% / .4);color:var(--muted-fg);font-size:.75rem;font-style:italic;text-align:center;padding:.75rem 1rem}
+.compare-table .icon{width:1rem;height:1rem;margin:0 auto}
+
 /* ============ Privacy / prose ============ */
 .prose{max-width:none;font-size:1.05rem;line-height:1.75;color:hsl(0 0% 8% / .9)}
 .prose section{margin-bottom:2rem}

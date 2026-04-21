@@ -129,6 +129,31 @@
             </div>
           </div>
         </div>
+        <!-- Compare toggle -->
+        <div style="text-align:center;margin-top:.5rem">
+          <button class="compare-toggle" id="compare-toggle">
+            Показать подробную таблицу сравнения
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chev"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="compare-wrap" id="compare-wrap">
+          <div class="compare-table-scroll">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Характеристика</th>
+                  <th>Эконом</th>
+                  <th class="optimum-col">Оптимум</th>
+                  <th>Максимум</th>
+                </tr>
+              </thead>
+              <tbody id="compare-tbody"></tbody>
+              <tfoot>
+                <tr><td colspan="4">* Разводка электрики, водоснабжения, отопления и канализации рассчитывается индивидуально. Во всех комплектациях предусмотрены закладные.</td></tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -276,7 +301,44 @@
           <p>Оставьте заявку, и наш инженер свяжется с вами для подробной консультации и предварительного расчёта. Это бесплатно и ни к чему не обязывает.</p>
         </div>
         <div class="form-wrap">
-          <button class="btn btn-primary btn-lg btn-block" data-modal-open data-modal-title="Оставить заявку на расчёт" data-modal-desc="Заполните форму ниже, и мы подготовим для вас предварительный расчёт стоимости.">Открыть форму заявки</button>
+          <div id="contact-form-wrap">
+            <form id="contact-form" class="lead-form" novalidate>
+              <div class="lead-row">
+                <div class="field"><label>Имя*</label><input name="name" placeholder="Иван Иванов" required minlength="2"><div class="err">Введите ваше имя</div></div>
+                <div class="field"><label>Телефон*</label><input name="phone" type="tel" placeholder="+7 (999) 000-00-00" required minlength="10"><div class="err">Введите корректный телефон</div></div>
+              </div>
+              <div class="lead-row">
+                <div class="field"><label>Желаемая площадь*</label>
+                  <select name="area" required>
+                    <option value="">Выберите площадь</option>
+                    <option value="до 100">до 100 м²</option>
+                    <option value="100-150">100–150 м²</option>
+                    <option value="150-200">150–200 м²</option>
+                    <option value="200-250">200–250 м²</option>
+                    <option value="250+">250+ м²</option>
+                  </select><div class="err">Выберите желаемую площадь</div></div>
+                <div class="field"><label>Комплектация</label>
+                  <select name="package">
+                    <option value="">Выберите комплектацию</option>
+                    <option value="эконом">Эконом</option>
+                    <option value="оптимум">Оптимум</option>
+                    <option value="максимум">Максимум</option>
+                    <option value="подскажите">Подскажите вы</option>
+                  </select></div>
+              </div>
+              <div class="field"><label>Комментарий</label><textarea name="comment" placeholder="Опишите ваши пожелания, наличие участка и т.д."></textarea></div>
+              <div class="consent">
+                <input type="checkbox" name="consent" id="contact-consent-cb" checked>
+                <label for="contact-consent-cb">Отправляя форму, даю согласие на обработку моих персональных данных. <a href="privacy.html" target="_blank">Политика конфиденциальности</a></label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Получить расчёт</button>
+            </form>
+          </div>
+          <div class="lead-success" id="contact-success" style="display:none">
+            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"/><polyline points="9 12 12 15 16 9"/></svg></div>
+            <h3>Заявка отправлена!</h3>
+            <p>Менеджер свяжется с вами в течение рабочего дня.</p>
+          </div>
         </div>
       </div>
     </div>
