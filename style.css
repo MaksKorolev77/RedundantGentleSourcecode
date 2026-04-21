@@ -407,10 +407,15 @@ a.contact-item:hover .icon-wrap .icon{color:var(--primary)}
 .detail-pkg-head .tg{color:var(--muted-fg)}
 .detail-pkg-head .pr{font-size:1.875rem;font-weight:700;color:var(--primary)}
 .specs-section{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--primary);padding-top:.75rem;display:block}
-.specs-row{display:grid;grid-template-columns:1fr;gap:.5rem;font-size:.875rem;padding:.5rem 0;border-bottom:1px solid hsl(0 0% 90% / .5)}
+.specs-row{display:grid;grid-template-columns:1fr;gap:.5rem;font-size:.875rem;padding:.5rem .5rem;border-bottom:1px solid hsl(0 0% 90% / .5);border-radius:.375rem}
 @media(min-width:768px){.specs-row{grid-template-columns:5fr 7fr;gap:.75rem}}
 .specs-row .lbl{color:var(--muted-fg)}
-.specs-row .val{color:var(--fg)}
+.specs-row .val{color:var(--fg);display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.specs-row-diff{background:hsl(0 0% 97%);border-left:3px solid var(--primary);padding-left:.625rem}
+.spec-badge{display:inline-flex;align-items:center;font-size:.65rem;font-weight:700;letter-spacing:.04em;padding:.15rem .45rem;border-radius:9999px;flex-shrink:0;white-space:nowrap}
+.spec-no{background:hsl(0 0% 90%);color:hsl(0 0% 45%)}
+.spec-yes{background:hsl(28 100% 48% / .12);color:var(--primary)}
+.spec-alt{background:hsl(215 80% 55% / .12);color:hsl(215 80% 45%)}
 
 .cta-dark{background:var(--fg);color:#fff;border-radius:1rem;padding:2rem;text-align:center;margin-top:4rem}
 @media(min-width:768px){.cta-dark{padding:3rem}}

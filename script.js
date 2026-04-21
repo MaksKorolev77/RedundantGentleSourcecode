@@ -378,10 +378,25 @@ function renderProjectDetail(){
       <span class="nm">${esc(pk.name)}</span><span class="pr">${esc(pk.price)}</span>
     </button>`).join('');
 
+  const ALL_PKG_KEYS = ['econom','optimum','maximum'];
   const specsHtml = pk => window.PACKAGE_SPECS.map(row => {
     if (row.section) return `<div class="specs-section">${esc(row.section)}</div>`;
     const v = row[pk.key];
-    return `<div class="specs-row"><div class="lbl">${esc(row.label)}</div><div class="val">${esc(v)}</div></div>`;
+    const allVals = ALL_PKG_KEYS.map(k => row[k]);
+    const allSame = allVals.every(x => x === allVals[0]);
+    let badge = '';
+    let extra = '';
+    if (!allSame) {
+      extra = ' specs-row-diff';
+      if (v === '—') {
+        badge = `<span class="spec-badge spec-no">нет</span>`;
+      } else if (allVals.some(x => x === '—')) {
+        badge = `<span class="spec-badge spec-yes">включено</span>`;
+      } else {
+        badge = `<span class="spec-badge spec-alt">отличие</span>`;
+      }
+    }
+    return `<div class="specs-row${extra}"><div class="lbl">${esc(row.label)}</div><div class="val">${esc(v)}${badge}</div></div>`;
   }).join('');
 
   const pkgPanel = pk => `
