@@ -30,10 +30,31 @@
   <section class="container" style="padding-bottom:6rem">
     <div class="cards-grid" id="projects-list"></div>
 
-    <div class="cta-dark">
-      <h2>Не нашли подходящий проект?</h2>
-      <p>Мы спроектируем дом с нуля под ваш участок, бюджет и образ жизни. Адаптация типовых проектов — бесплатно при заключении договора.</p>
-      <button class="btn btn-primary btn-lg" data-modal-open data-modal-title="Индивидуальный проект" data-modal-desc="Опишите идею, мы свяжемся и обсудим детали." data-default-comment="Интересует индивидуальный проект.">Обсудить индивидуальный проект</button>
+    <div class="split-cta">
+      <div class="split-cta-card split-cta-primary">
+        <div class="scc-icon" data-icon="pen"></div>
+        <h3>Не нашли подходящий проект?</h3>
+        <p>Разработаем дом с нуля под ваш участок, бюджет и образ жизни. Адаптация типовых проектов&nbsp;— бесплатно при заключении договора.</p>
+        <button class="btn btn-lg" style="background:#fff;color:var(--primary);font-weight:700;align-self:flex-start"
+          data-modal-open
+          data-modal-title="Индивидуальный проект"
+          data-modal-desc="Опишите идею — мы свяжемся и обсудим детали."
+          data-default-comment="Интересует индивидуальный проект.">
+          Заказать индивидуальный проект
+        </button>
+      </div>
+      <div class="split-cta-card split-cta-outline">
+        <div class="scc-icon" data-icon="zap"></div>
+        <h3>Уже есть готовый проект?</h3>
+        <p>Рассчитаем точную стоимость строительства по вашим чертежам или эскизу. Пришлите проект&nbsp;— ответим с расчётом в течение дня.</p>
+        <button class="btn btn-primary btn-lg" style="align-self:flex-start"
+          data-modal-open
+          data-modal-title="Расчёт по вашему проекту"
+          data-modal-desc="Пришлите ссылку или опишите проект — рассчитаем стоимость строительства."
+          data-default-comment="Хочу рассчитать стоимость по своему проекту.">
+          Рассчитать стоимость
+        </button>
+      </div>
     </div>
   </section>
 </main>

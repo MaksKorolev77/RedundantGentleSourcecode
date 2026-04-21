@@ -53,11 +53,34 @@
         <p class="section-lead">От уютных дачных домиков до просторных семейных резиденций. Любой проект можно адаптировать под ваши пожелания.</p>
       </div>
       <div class="cards-grid" id="home-projects-grid"></div>
-      <div style="margin-top:4rem;display:flex;flex-direction:column;gap:1rem;align-items:center;justify-content:center" class="hero-actions">
-        <div style="display:flex;flex-direction:column;gap:1rem;align-items:center" class="hero-actions">
-          <a href="projects.html" class="btn btn-primary btn-lg">Все проекты <span data-icon="arrowright"></span></a>
-          <button class="btn btn-outline btn-lg" data-modal-open data-modal-title="Индивидуальное проектирование" data-modal-desc="Расскажите о доме вашей мечты, и мы разработаем проект специально для вас." data-default-comment="Интересует индивидуальный проект.">Заказать индивидуальный проект</button>
+      <div class="split-cta">
+        <div class="split-cta-card split-cta-primary">
+          <div class="scc-icon" data-icon="pen"></div>
+          <h3>Не нашли подходящий проект?</h3>
+          <p>Разработаем дом с нуля под ваш участок, бюджет и образ жизни. Адаптация типовых проектов&nbsp;— бесплатно при заключении договора.</p>
+          <button class="btn btn-lg" style="background:#fff;color:var(--primary);font-weight:700;align-self:flex-start"
+            data-modal-open
+            data-modal-title="Индивидуальный проект"
+            data-modal-desc="Опишите идею — мы свяжемся и обсудим детали."
+            data-default-comment="Интересует индивидуальный проект.">
+            Заказать индивидуальный проект
+          </button>
         </div>
+        <div class="split-cta-card split-cta-outline">
+          <div class="scc-icon" data-icon="zap"></div>
+          <h3>Уже есть готовый проект?</h3>
+          <p>Рассчитаем точную стоимость строительства по вашим чертежам или эскизу. Пришлите проект&nbsp;— ответим с расчётом в течение дня.</p>
+          <button class="btn btn-primary btn-lg" style="align-self:flex-start"
+            data-modal-open
+            data-modal-title="Расчёт по вашему проекту"
+            data-modal-desc="Пришлите ссылку или опишите проект — рассчитаем стоимость строительства."
+            data-default-comment="Хочу рассчитать стоимость по своему проекту.">
+            Рассчитать стоимость
+          </button>
+        </div>
+      </div>
+      <div style="margin-top:2rem;text-align:center">
+        <a href="projects.html" class="btn btn-outline btn-lg">Все проекты <span data-icon="arrowright"></span></a>
       </div>
     </div>
   </section>

@@ -427,6 +427,24 @@ a.contact-item:hover .icon-wrap .icon{color:var(--primary)}
 .lightbox .nav.next{right:1.5rem}
 .lightbox .counter{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);color:hsl(0 0% 100% / .8);font-size:.875rem;background:rgba(0,0,0,.5);padding:.25rem .75rem;border-radius:9999px}
 
+/* ============ Split CTA ============ */
+.split-cta{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:4rem}
+@media(min-width:768px){.split-cta{grid-template-columns:1fr 1fr}}
+.split-cta-card{border-radius:1.25rem;padding:2rem;display:flex;flex-direction:column;gap:1.25rem}
+@media(min-width:768px){.split-cta-card{padding:2.5rem}}
+.split-cta-card .scc-icon{width:3rem;height:3rem;border-radius:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.split-cta-card .scc-icon .icon{width:1.5rem;height:1.5rem}
+.split-cta-card h3{font-family:'Playfair Display',serif;font-size:1.375rem;font-weight:700;line-height:1.25}
+@media(min-width:768px){.split-cta-card h3{font-size:1.5rem}}
+.split-cta-card p{font-size:.975rem;line-height:1.6;flex:1}
+.split-cta-primary{background:var(--primary);color:#fff}
+.split-cta-primary .scc-icon{background:rgba(255,255,255,.2)}
+.split-cta-primary p{opacity:.9}
+.split-cta-outline{background:#fff;border:2px solid var(--primary);color:var(--fg)}
+.split-cta-outline .scc-icon{background:var(--primary-bg-soft);color:var(--primary)}
+.split-cta-outline p{color:var(--muted-fg)}
+.split-cta-outline h3{color:var(--fg)}
+
 /* ============ Contacts block ============ */
 .contacts-block{background:#fff;border-top:1px solid var(--border)}
 .contacts-grid{display:grid;grid-template-columns:1fr;gap:2.5rem}
