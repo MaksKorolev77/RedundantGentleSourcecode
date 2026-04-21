@@ -222,7 +222,7 @@ function buildModal(){
   document.getElementById('modal-mount').innerHTML = html;
 
   qs('#modal').addEventListener('click', e => {
-    if (e.target.matches('[data-modal-close]')) closeModal();
+    if (e.target.closest('[data-modal-close]')) closeModal();
   });
   document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
 
