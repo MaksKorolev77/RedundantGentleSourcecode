@@ -437,9 +437,9 @@ a.contact-item:hover .icon-wrap .icon{color:var(--primary)}
 .split-cta-card h3{font-family:'Playfair Display',serif;font-size:1.375rem;font-weight:700;line-height:1.25}
 @media(min-width:768px){.split-cta-card h3{font-size:1.5rem}}
 .split-cta-card p{font-size:.975rem;line-height:1.6;flex:1}
-.split-cta-primary{background:var(--primary);color:#fff}
-.split-cta-primary .scc-icon{background:rgba(255,255,255,.2)}
-.split-cta-primary p{opacity:.9}
+.split-cta-primary{background:hsl(0 0% 8%);color:#fff}
+.split-cta-primary .scc-icon{background:rgba(255,255,255,.1)}
+.split-cta-primary p{opacity:.75}
 .split-cta-outline{background:#fff;border:2px solid var(--primary);color:var(--fg)}
 .split-cta-outline .scc-icon{background:var(--primary-bg-soft);color:var(--primary)}
 .split-cta-outline p{color:var(--muted-fg)}
