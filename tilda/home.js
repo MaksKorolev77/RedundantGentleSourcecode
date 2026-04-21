@@ -138,23 +138,36 @@
     qsa('.reveal').forEach(function (el) { obs.observe(el); });
   }
 
+  // ============ URL-адреса отдельных страниц проектов в Tilda ============
+  // TODO: если вы используете другие URL-адреса страниц в Tilda — замените их здесь
+  var PROJECT_URLS = {
+    uyut:       '/project-uyut/',
+    komfort:    '/project-komfort/',
+    semeynyy:   '/project-semeynyy/',
+    prostornyy: '/project-prostornyy/',
+    zagorodnyy: '/project-zagorodnyy/',
+    lesnoy:     '/project-lesnoy/',
+  };
+  function projectUrl(slug) { return PROJECT_URLS[slug] || '/project/?slug=' + esc(slug); }
+
   // ============ Project card HTML ============
   function projectCardHtml(p) {
+    var url = projectUrl(p.slug);
     return '<article class="project-card reveal">' +
-      '<a href="/project/?slug=' + esc(p.slug) + '" class="project-cover">' +
+      '<a href="' + url + '" class="project-cover">' +
       '<img src="' + esc(p.cover) + '" alt="Проект дома ' + esc(p.name) + '" loading="lazy">' +
       '<span class="project-tag">' + esc(p.style) + ' · ' + esc(p.floors) + '</span>' +
       '<span class="project-price-tag">' + esc(p.priceFrom) + '</span>' +
       '</a>' +
       '<div class="project-body">' +
-      '<a href="/project/?slug=' + esc(p.slug) + '"><h3 class="project-name">Проект «' + esc(p.name) + '»</h3></a>' +
+      '<a href="' + url + '"><h3 class="project-name">Проект «' + esc(p.name) + '»</h3></a>' +
       '<div class="project-meta">' +
       '<div>' + icon('maximize') + '<span class="label">Площадь</span><span class="value">' + esc(p.area) + ' м²</span></div>' +
       '<div>' + icon('bed') + '<span class="label">Спален</span><span class="value">' + p.bedrooms + '</span></div>' +
       '<div>' + icon('bath') + '<span class="label">Санузлов</span><span class="value">' + p.bathrooms + '</span></div>' +
       '</div>' +
       '<div class="project-actions">' +
-      '<a href="/project/?slug=' + esc(p.slug) + '" class="btn btn-outline">Подробнее о проекте ' + icon('arrowright') + '</a>' +
+      '<a href="' + url + '" class="btn btn-outline">Подробнее о проекте ' + icon('arrowright') + '</a>' +
       '<button class="btn btn-primary" data-modal-open data-modal-title="Расчёт проекта «' + esc(p.name) + '»" data-modal-desc="Оставьте свои контакты, и мы свяжемся с вами для детального расчёта проекта «' + esc(p.name) + '» (' + esc(p.area) + ' м²)." data-default-comment="Интересует проект «' + esc(p.name) + '» (' + esc(p.area) + ' м²).">Рассчитать этот проект</button>' +
       '</div></div></article>';
   }

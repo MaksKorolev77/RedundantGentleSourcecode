@@ -132,6 +132,18 @@
 
   function getProject(slug) { return PROJECTS.find(function (p) { return p.slug === slug; }); }
 
+  // ============ URL-адреса отдельных страниц проектов в Tilda ============
+  // TODO: если вы используете другие URL-адреса страниц в Tilda — замените их здесь
+  var PROJECT_URLS = {
+    uyut:       '/project-uyut/',
+    komfort:    '/project-komfort/',
+    semeynyy:   '/project-semeynyy/',
+    prostornyy: '/project-prostornyy/',
+    zagorodnyy: '/project-zagorodnyy/',
+    lesnoy:     '/project-lesnoy/',
+  };
+  function projectUrl(slug) { return PROJECT_URLS[slug] || '/project/?slug=' + esc(slug); }
+
   // ============ Modal ============
   function openModal(opts) {
     opts = opts || {};
@@ -253,7 +265,7 @@
   function renderProjectDetail() {
     var root = qs('#project-detail');
     if (!root) return;
-    var slug = new URLSearchParams(location.search).get('slug');
+    var slug = window.UK_SLUG || new URLSearchParams(location.search).get('slug');
     var p = slug ? getProject(slug) : null;
     if (!p) {
       root.innerHTML = '<div class="container" style="padding:6rem 1rem;text-align:center"><h1 class="page-title">Проект не найден</h1><p class="page-lead" style="margin:0 auto">Похоже, такого проекта нет. <a href="/projects/" style="color:var(--primary);text-decoration:underline">Все проекты</a></p></div>';
@@ -296,7 +308,7 @@
     }).join('');
 
     var otherHtml = otherProjects.map(function (o) {
-      return '<a href="/project/?slug=' + esc(o.slug) + '" class="project-card" style="cursor:pointer">' +
+      return '<a href="' + projectUrl(o.slug) + '" class="project-card" style="cursor:pointer">' +
         '<div class="project-cover"><img src="' + esc(o.cover) + '" alt="' + esc(o.name) + '" loading="lazy"></div>' +
         '<div class="project-body">' +
         '<div style="color:var(--primary);font-weight:700;margin-bottom:.5rem">' + esc(o.priceFrom) + '</div>' +
