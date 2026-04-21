@@ -51,7 +51,7 @@ function renderHeader(inner=false){
         <a href="index.html#services">Услуги</a>
         <a href="index.html#about">О нас</a>
         <a href="index.html#calculator">Калькулятор</a>
-        <a href="index.html#contact">Контакты</a>
+        <a href="index.html#contacts">Контакты</a>
       </nav>
       <div class="header-actions">
         <a href="tel:+74993909789" class="phone-link">${icon('phone')}+7 (499) 390-97-89</a>
@@ -70,7 +70,7 @@ function renderHeader(inner=false){
       <a href="index.html#services">Услуги</a>
       <a href="index.html#about">О нас</a>
       <a href="index.html#calculator">Калькулятор</a>
-      <a href="index.html#contact">Контакты</a>
+      <a href="index.html#contacts">Контакты</a>
     </nav>
     <div class="footer-area">
       <a href="tel:+74993909789" class="phone-link" style="justify-content:center;font-size:1.25rem">${icon('phone')}+7 (499) 390-97-89</a>
