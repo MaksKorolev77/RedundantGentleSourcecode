@@ -102,7 +102,6 @@
     if (opts.defaultComment) form.querySelector('[name="comment"]').value = opts.defaultComment;
     qsa('.field', form).forEach(function (f) { f.classList.remove('has-err'); });
     qs('#lead-form-wrap').style.display = '';
-    qs('#lead-success').style.display = 'none';
     overlay.classList.add('is-open');
     document.body.style.overflow = 'hidden';
   }
@@ -124,18 +123,15 @@
       '<div class="field"><label>Телефон*</label><input name="phone" type="tel" placeholder="+7 (999) 000-00-00" required minlength="10"><div class="err">Введите корректный телефон</div></div>' +
       '</div>' +
       '<div class="lead-row">' +
-      '<div class="field"><label>Желаемая площадь*</label><select name="area" required><option value="">Выберите площадь</option><option value="до 100">до 100 м²</option><option value="100-150">100–150 м²</option><option value="150-200">150–200 м²</option><option value="200-250">200–250 м²</option><option value="250+">250+ м²</option></select><div class="err">Выберите желаемую площадь</div></div>' +
+      '<div class="field"><label>Желаемая площадь</label><select name="area"><option value="">Выберите площадь</option><option value="до 100">до 100 м²</option><option value="100-150">100–150 м²</option><option value="150-200">150–200 м²</option><option value="200-250">200–250 м²</option><option value="250+">250+ м²</option></select></div>' +
       '<div class="field"><label>Комплектация</label><select name="package"><option value="">Выберите комплектацию</option><option value="эконом">Эконом</option><option value="оптимум">Оптимум</option><option value="максимум">Максимум</option><option value="подскажите">Подскажите вы</option></select></div>' +
       '</div>' +
       '<div class="field"><label>Комментарий</label><textarea name="comment" placeholder="Опишите ваши пожелания, наличие участка и т.д."></textarea></div>' +
       '<div class="consent"><input type="checkbox" name="consent" id="modal-consent-cb" checked>' +
-      '<label for="modal-consent-cb">Отправляя форму, даю согласие на обработку моих персональных данных. <a href="/privacy/" target="_blank">Политика конфиденциальности</a></label></div>' +
+      '<label for="modal-consent-cb">Отправляя форму, даю согласие на обработку моих персональных данных. <a href="/privacy/" target="_blank">Политика конфиденциальности</a></label>' +
+      '<div id="modal-consent-err" style="display:none;color:var(--danger,#dc2626);font-size:.85rem;margin-top:.25rem">Необходимо согласие на обработку персональных данных</div></div>' +
       '<button type="submit" class="btn btn-primary btn-lg btn-block">Получить расчёт</button>' +
-      '</form></div>' +
-      '<div class="lead-success" id="lead-success" style="display:none">' +
-      '<div class="circle">' + icon('checkc') + '</div>' +
-      '<h3>Заявка отправлена!</h3><p>Менеджер свяжется с вами в течение рабочего дня.</p>' +
-      '</div></div></div>';
+      '</form></div></div></div>';
     qs('#modal-mount').innerHTML = html;
 
     qs('#modal').addEventListener('click', function (e) {
@@ -154,7 +150,9 @@
           if (!v || (inp.minLength && v.length < inp.minLength)) { fld.classList.add('has-err'); ok = false; }
         }
       });
-      if (!f.querySelector('[name="consent"]').checked) { ok = false; alert('Необходимо согласие на обработку данных'); }
+      var consentErr = qs('#modal-consent-err', f);
+      if (consentErr) consentErr.style.display = 'none';
+      if (!f.querySelector('[name="consent"]').checked) { ok = false; if (consentErr) consentErr.style.display = ''; }
       if (!ok) return;
       var fd   = new FormData(f);
       var sbtn = f.querySelector('[type="submit"]');
@@ -163,8 +161,7 @@
         { name: fd.get('name'), phone: fd.get('phone'), area: fd.get('area'), 'package': fd.get('package'), comment: fd.get('comment') },
         function () {
           if (sbtn) sbtn.disabled = false;
-          qs('#lead-form-wrap').style.display = 'none';
-          qs('#lead-success').style.display = '';
+          closeModal();
         },
         function (err) {
           if (sbtn) sbtn.disabled = false;
@@ -344,7 +341,9 @@
           if (!v || (inp.minLength && v.length < inp.minLength)) { fld.classList.add('has-err'); ok = false; }
         }
       });
-      if (!form.querySelector('[name="consent"]').checked) { ok = false; alert('Необходимо согласие на обработку данных'); }
+      var consentErr = qs('#contact-consent-err');
+      if (consentErr) consentErr.style.display = 'none';
+      if (!form.querySelector('[name="consent"]').checked) { ok = false; if (consentErr) consentErr.style.display = ''; }
       if (!ok) return;
       var fd   = new FormData(form);
       var sbtn = form.querySelector('[type="submit"]');
@@ -353,8 +352,7 @@
         { name: fd.get('name'), phone: fd.get('phone'), area: fd.get('area'), 'package': fd.get('package'), comment: fd.get('comment') },
         function () {
           if (sbtn) sbtn.disabled = false;
-          qs('#contact-form-wrap').style.display = 'none';
-          qs('#contact-success').style.display = '';
+          form.reset();
         },
         function (err) {
           if (sbtn) sbtn.disabled = false;

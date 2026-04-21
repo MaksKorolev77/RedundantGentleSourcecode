@@ -1,0 +1,83 @@
+<!--
+  УльтраКаркас — Шапка сайта (общая для всех страниц)
+  Tilda T123 Zero Block: вставьте в поле «HTML»
+  JS: вставьте содержимое header.js в поле «JS»
+  CSS: уже включён в global.css
+  Добавьте этот блок САМЫМ ПЕРВЫМ на каждой странице Tilda.
+  В настройках блока T123 установите «Отступы» = 0 и «Позиция» = поверх контента (fixed).
+-->
+
+<header class="header" id="uk-header">
+  <div class="container header-inner">
+
+    <!-- Логотип -->
+    <!-- TODO: замените / на URL главной страницы в Tilda -->
+    <a href="/" class="logo">
+      <div class="logo-mark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <span class="logo-text">Ультра<em style="color:var(--primary);font-style:normal">Каркас</em></span>
+    </a>
+
+    <!-- Десктопная навигация -->
+    <nav class="nav-desktop">
+      <!-- TODO: замените URL ссылок на реальные адреса страниц в Tilda -->
+      <a href="/projects/">Проекты</a>
+      <a href="/#configurations">Комплектации</a>
+      <a href="/#stages">Этапы</a>
+      <a href="/#services">Услуги</a>
+      <a href="/#about">О нас</a>
+      <a href="/#faq">Вопросы</a>
+      <a href="/#contacts">Контакты</a>
+    </nav>
+
+    <!-- Десктопные кнопки (от 768px) -->
+    <div class="header-actions">
+      <a href="tel:+74993909789" class="phone-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +7 (499) 390-97-89
+      </a>
+      <button class="btn btn-primary" id="uk-header-cta" data-modal-open data-modal-title="Оставить заявку на расчёт" data-modal-desc="Заполните форму, и мы подготовим для вас предварительный расчёт стоимости.">Получить расчёт</button>
+    </div>
+
+    <!-- Мобильные кнопки (до 1024px) -->
+    <div class="header-mobile">
+      <a href="tel:+74993909789" class="phone-pill" aria-label="Позвонить">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <button class="menu-btn" id="uk-menu-open" aria-label="Открыть меню">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mobile-menu" id="uk-mobile-menu" aria-hidden="true">
+  <button class="menu-btn" id="uk-menu-close" aria-label="Закрыть меню" style="position:absolute;top:1.25rem;right:1.25rem">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+
+  <nav>
+    <a href="/projects/">Проекты</a>
+    <a href="/#configurations">Комплектации</a>
+    <a href="/#stages">Этапы</a>
+    <a href="/#services">Услуги</a>
+    <a href="/#about">О нас</a>
+    <a href="/#faq">Вопросы</a>
+    <a href="/#contacts">Контакты</a>
+  </nav>
+
+  <div class="footer-area">
+    <a href="tel:+74993909789" class="btn btn-outline" style="justify-content:center">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +7 (499) 390-97-89
+    </a>
+    <button class="btn btn-primary" data-modal-open data-modal-title="Оставить заявку на расчёт" data-modal-desc="Заполните форму, и мы подготовим для вас предварительный расчёт стоимости.">Получить расчёт</button>
+  </div>
+</div>
+
+<!-- Монтаж модального окна (если шапка — единственный блок на странице с модалью) -->
+<!-- На главной странице этот div уже есть — не дублируйте -->
+<div id="modal-mount"></div>
