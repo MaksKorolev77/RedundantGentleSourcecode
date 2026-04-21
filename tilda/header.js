@@ -61,8 +61,9 @@
   // потому что кнопка [data-modal-open] уже слушается там.
   // На страницах без своего JS (например, /privacy/) этот обработчик откроет окно.
   function setupModalFallback() {
-    if (window._ukModalReady) return; // уже настроено другим скриптом
     document.addEventListener('click', function (e) {
+      // Если другой скрипт (project.js / home.js / projects.js) уже обрабатывает модаль — не вмешиваемся
+      if (window._ukModalReady) return;
       var btn = e.target.closest('[data-modal-open]');
       if (!btn) return;
       e.preventDefault();

@@ -5,6 +5,7 @@
 (function () {
   if (window._ukInitProjects) return;
   window._ukInitProjects = true;
+  window._ukModalReady = true;
 
   // ============ Inline SVG icons ============
   var ICONS = {
