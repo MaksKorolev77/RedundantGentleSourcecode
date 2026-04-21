@@ -37,17 +37,20 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"
 
 // ============ Header build ============
 function renderHeader(inner=false){
+  const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`;
   const html = `
   <header class="header${inner?' is-inner':''}" id="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <span class="logo-mark">УК</span>
+        <span class="logo-mark">${LOGO_SVG}</span>
         <span class="logo-text">УльтраКаркас</span>
       </a>
       <nav class="nav-desktop">
         <a href="projects.html">Проекты</a>
         <a href="index.html#packages">Комплектации</a>
+        <a href="index.html#services">Услуги</a>
         <a href="index.html#about">О нас</a>
+        <a href="index.html#calculator">Калькулятор</a>
         <a href="index.html#contact">Контакты</a>
       </nav>
       <div class="header-actions">
@@ -64,7 +67,9 @@ function renderHeader(inner=false){
     <nav>
       <a href="projects.html">Проекты</a>
       <a href="index.html#packages">Комплектации</a>
+      <a href="index.html#services">Услуги</a>
       <a href="index.html#about">О нас</a>
+      <a href="index.html#calculator">Калькулятор</a>
       <a href="index.html#contact">Контакты</a>
     </nav>
     <div class="footer-area">
@@ -100,7 +105,7 @@ function renderFooter(){
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <span class="logo-mark">УК</span>
+            <span class="logo-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
             <span class="logo-text" style="font-size:1.5rem">УльтраКаркас</span>
           </a>
           <p>Строительство надежных и энергоэффективных каркасных домов в Москве и Московской области.</p>
