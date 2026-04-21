@@ -62,12 +62,13 @@
   // На страницах без своего JS (например, /privacy/) этот обработчик откроет окно.
   function setupModalFallback() {
     document.addEventListener('click', function (e) {
-      // Если другой скрипт (project.js / home.js / projects.js) уже обрабатывает модаль — не вмешиваемся
-      if (window._ukModalReady) return;
       var btn = e.target.closest('[data-modal-open]');
       if (!btn) return;
+      // Если на странице уже есть модальное окно (создано home.js / project.js / projects.js) — не вмешиваемся
+      if (window._ukModalReady || document.getElementById('modal')) return;
       e.preventDefault();
-      // Простейший fallback: переходим на главную с якорем #contact
+      e.stopImmediatePropagation();
+      // Fallback только для страниц без своего JS (например /privacy/)
       window.location.href = '/#contact';
     });
   }
