@@ -4,24 +4,26 @@
 
      TODO: замените /projects/, /privacy/ и якоря на реальные URL ваших страниц в Tilda.
 -->
-<footer class="uk-footer" role="contentinfo">
+<footer class="uk-footer" id="contact" role="contentinfo">
   <div class="container">
 
     <div class="footer-grid">
 
       <!-- Бренд -->
       <div class="footer-brand">
-        <a href="/" class="brand-logo" aria-label="УльтраКаркас — на главную">
-          <div class="logo-badge">УК</div>
-          <span class="logo-name serif">УльтраКаркас</span>
+        <a href="/" class="logo" aria-label="УльтраКаркас — на главную">
+          <span class="logo-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </span>
+          <span class="logo-text serif" style="font-size:1.5rem">УльтраКаркас</span>
         </a>
-        <p>Строительство надёжных и энергоэффективных каркасных домов в Москве и Московской области.</p>
+        <p class="footer-brand-desc">Строительство надежных и энергоэффективных каркасных домов в Москве и Московской области.</p>
       </div>
 
       <!-- Навигация -->
-      <nav class="footer-nav" aria-label="Навигация сайта">
+      <nav aria-label="Навигация сайта">
         <h4>Навигация</h4>
-        <ul>
+        <ul class="footer-nav-list">
           <!-- TODO: замените href на реальные URL страниц в Tilda -->
           <li><a href="/projects/">Проекты домов</a></li>
           <li><a href="/#packages">Комплектации и цены</a></li>
@@ -31,48 +33,76 @@
       </nav>
 
       <!-- Контакты -->
-      <div class="footer-contacts">
+      <div>
         <h4>Контакты</h4>
-        <div class="footer-contacts-grid">
+        <div class="contact-grid">
 
-          <a href="tel:+74993909789" class="fc-item">
-            <div class="fc-icon">
+          <!-- Телефон -->
+          <a href="tel:+74993909789" class="contact-item">
+            <div class="icon-wrap">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.338c0-1.01.762-1.907 1.77-2.03C5.312 4.12 6.64 4 8 4s2.688.12 3.98.308c1.008.123 1.77 1.02 1.77 2.03v.664c0 .95-.646 1.78-1.566 1.97l-1.246.25a1.125 1.125 0 00-.876 1.079v.765a.75.75 0 01-.309.606l-.33.22a6.75 6.75 0 01-2.988 1.073c-.437.045-.877-.13-1.138-.461l-.33-.413a1.125 1.125 0 00-.892-.41h-.003A1.125 1.125 0 004.5 12.75v-.764c0-.433.254-.826.654-1.002L6.5 10.25A1.125 1.125 0 007.375 9.17V8.5a.75.75 0 01.75-.75H9M6 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
             </div>
             <div>
-              <div class="fc-label">+7 (499) 390-97-89</div>
-              <div class="fc-sub">Звонок бесплатный</div>
+              <div class="ci-big">+7 (499) 390-97-89</div>
+              <div class="ci-small">Звонок бесплатный</div>
             </div>
           </a>
 
-          <a href="mailto:info@ultrakarkas.ru" class="fc-item">
-            <div class="fc-icon">
+          <!-- Email -->
+          <a href="mailto:info@ultrakarkas.ru" class="contact-item">
+            <div class="icon-wrap">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
             </div>
-            <div>
-              <div class="fc-label">info@ultrakarkas.ru</div>
+            <div style="padding-top:.4rem">
+              <div class="ci-title">info@ultrakarkas.ru</div>
+              <div class="ci-small">Написать письмо</div>
             </div>
           </a>
 
-          <div class="fc-item">
-            <div class="fc-icon">
+          <!-- Адрес — кликабельный, открывает Яндекс.Карты -->
+          <a href="https://yandex.ru/maps/-/CPCOQC3w" target="_blank" rel="noopener" class="contact-item">
+            <div class="icon-wrap">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
             </div>
             <div>
-              <div class="fc-label">Офис продаж:</div>
-              <div class="fc-sub">Московская обл., г. Одинцово,<br>р.п. Заречье, ул. Торговая, 2С</div>
+              <div class="ci-title">Офис продаж:</div>
+              <div class="ci-small">Московская обл., г. Одинцово,<br>р.п. Заречье, ул. Торговая, 2С</div>
+              <div class="ci-route">Построить маршрут →</div>
             </div>
-          </div>
+          </a>
 
-          <div class="fc-item">
-            <div class="fc-icon">
+          <!-- Режим работы -->
+          <div class="contact-item">
+            <div class="icon-wrap">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
             <div>
-              <div class="fc-label">Режим работы:</div>
-              <div class="fc-sub">Ежедневно: 10:00 – 18:00</div>
+              <div class="ci-title">Режим работы:</div>
+              <div class="ci-small">Ежедневно: 10:00 – 18:00</div>
             </div>
           </div>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/79269935818" target="_blank" rel="noopener" class="contact-item messenger-item">
+            <div class="icon-wrap messenger-wa">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <div class="ci-title">WhatsApp</div>
+              <div class="ci-small">+7 (926) 993-58-18</div>
+            </div>
+          </a>
+
+          <!-- Telegram -->
+          <a href="https://t.me/+79269935818" target="_blank" rel="noopener" class="contact-item messenger-item">
+            <div class="icon-wrap messenger-tg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </div>
+            <div>
+              <div class="ci-title">Telegram</div>
+              <div class="ci-small">+7 (926) 993-58-18</div>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -80,8 +110,8 @@
 
     <!-- Нижняя строка -->
     <div class="footer-bottom">
-      <p id="footer-copy">© 2025 ООО «УльтраКаркас». Все права защищены. Не является публичной офертой.</p>
-      <!-- TODO: замените /privacy/ на реальный URL страницы политики -->
+      <div id="footer-copy">© 2025 ООО «УльтраКаркас». Все права защищены. Не является публичной офертой.</div>
+      <!-- TODO: замените /privacy/ на реальный URL страницы политики в Tilda -->
       <a href="/privacy/">Политика конфиденциальности</a>
     </div>
 
