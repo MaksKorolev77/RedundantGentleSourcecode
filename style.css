@@ -169,12 +169,7 @@ svg{display:block}
 .feature-list .check,.feature-list .minus{width:1.25rem;height:1.25rem;color:var(--primary);flex-shrink:0;margin-top:.125rem}
 .feature-list .minus{color:var(--muted-fg)}
 .feature-list li.dim{color:var(--muted-fg)}
-.eng-section{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
-.eng-title{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--primary);margin-bottom:1rem;display:inline-flex;align-items:center;gap:.5rem}
-.eng-title::before{content:'';display:inline-block;width:.5rem;height:.5rem;border-radius:9999px;background:var(--primary);flex-shrink:0}
-.eng-list{display:flex;flex-direction:column;gap:.625rem}
-.eng-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem}
-.eng-list .check{width:1.125rem;height:1.125rem;color:var(--primary);flex-shrink:0;margin-top:.125rem}
+
 
 /* ============ Process timeline ============ */
 .process{position:relative;max-width:64rem;margin:0 auto}
@@ -499,6 +494,7 @@ a.ci:hover .ci-body .val{color:var(--primary)}
 .compare-table tbody tr:hover{background:hsl(0 0% 96% / .5)}
 .compare-table tfoot td{background:hsl(0 0% 96% / .4);color:var(--muted-fg);font-size:.75rem;font-style:italic;text-align:center;padding:.75rem 1rem}
 .compare-table .icon{width:1rem;height:1rem;margin:0 auto}
+.compare-section-row td{background:hsl(28 100% 48% / .06);color:var(--primary);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;padding:.5rem 1rem;border-bottom:1px solid var(--border)}
 
 /* ============ Privacy / prose ============ */
 .prose{max-width:none;font-size:1.05rem;line-height:1.75;color:hsl(0 0% 8% / .9)}

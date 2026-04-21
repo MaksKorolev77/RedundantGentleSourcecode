@@ -541,12 +541,14 @@ function setupLightbox(p){
 
 // ============ Comparison table ============
 const COMPARE_FEATURES = [
+  { section:"Основание и пол" },
   { name:"Фундамент", econom:"Ж/б забивные сваи 150×150×3000", optimum:"Ж/б забивные сваи 150×150×3000", max:"Ж/б забивные сваи 150×150×3000" },
   { name:"Нижняя обвязка", econom:"Сухая строганная доска 150×150 мм", optimum:"Сухая строганная доска 150×150 мм", max:"Сухая строганная доска 150×150 мм" },
   { name:"Лаги пола", econom:"Сухая доска 45×190 мм", optimum:"Сухая доска 45×190 мм", max:"Сухая доска 45×190 мм" },
   { name:"Утепление пола", econom:"Каменная вата 200 мм", optimum:"Каменная вата 200 мм", max:"Каменная вата 250 мм", h:"max" },
   { name:"Черный пол", econom:"Обрезная доска 20×100 мм", optimum:"Обрезная доска 20×100 мм", max:"Обрезная доска 20×100 мм" },
   { name:"Покрытие пола", econom:false, optimum:"Фанера 18 мм", max:"Фанера 18 мм", h:"optimum" },
+  { section:"Каркас и отделка" },
   { name:"Каркас стен", econom:"Доска 45×145 мм", optimum:"Доска 45×145 мм + брусок 40×50 мм", max:"Доска 45×190 мм + брусок 40×50 мм", h:"all" },
   { name:"Утепление стен", econom:"Каменная вата 150 мм", optimum:"Каменная вата 150+50=200 мм", max:"Каменная вата 200+50=250 мм", h:"all" },
   { name:"Утепление перегородок", econom:"Каменная вата 100 мм", optimum:"Каменная вата 100 мм", max:"Каменная вата 100 мм" },
@@ -556,12 +558,18 @@ const COMPARE_FEATURES = [
   { name:"Утепление потолка", econom:"Каменная вата 200 мм", optimum:"Каменная вата 200 мм", max:"Каменная вата 250 мм", h:"max" },
   { name:"Окна", econom:"Пластиковые ПВХ 70 Рехау", optimum:"Пластиковые ПВХ 70 Рехау", max:"Пластиковые ПВХ 70 Рехау" },
   { name:"Дверь", econom:"Металлическая с терморазрывом 100 мм", optimum:"Металлическая с терморазрывом 100 мм", max:"Металлическая с терморазрывом 100 мм" },
+  { section:"Кровля" },
   { name:"Стропило", econom:"Сухая доска 45×190 мм", optimum:"Сухая доска 45×190 мм", max:"Сухая доска 45×190 мм" },
   { name:"Кровля", econom:"Металлочерепица 0.5 мм", optimum:"Металлочерепица 0.5 мм", max:"Металлочерепица 0.5 мм" },
   { name:"Утепление кровли", econom:"Каменная вата 200 мм", optimum:"Каменная вата 200 мм", max:"Каменная вата 250 мм", h:"max" },
   { name:"Водостоки", econom:false, optimum:true, max:true, h:"optimum" },
   { name:"Снегозадержатели", econom:false, optimum:true, max:true, h:"optimum" },
   { name:"Подшив свесов", econom:false, optimum:"Пластиковые софиты", max:"Пластиковые софиты", h:"optimum" },
+  { section:"Инженерные системы" },
+  { name:"Вентиляция", econom:true, optimum:true, max:true, h:"all" },
+  { name:"Электрика", econom:"Труба ПНД 32 мм (закладная)", optimum:"Труба ПНД 32 мм (закладная)", max:"Труба ПНД 32 мм (закладная)" },
+  { name:"Водоснабжение", econom:"Труба ПНД 50 мм (закладная)", optimum:"Труба ПНД 50 мм (закладная)", max:"Труба ПНД 50 мм (закладная)" },
+  { name:"Канализация", econom:"Труба ПВХ 110 мм", optimum:"Труба ПВХ 110 мм", max:"Труба ПВХ 110 мм" },
 ];
 function cellHtml(val, isPrimary){
   if (val === false) return `<span style="color:var(--muted-fg);opacity:.5">${icon('minus')}</span>`;
@@ -572,6 +580,7 @@ function buildCompareTable(){
   const tbody = qs('#compare-tbody');
   if (!tbody) return;
   tbody.innerHTML = COMPARE_FEATURES.map(f => {
+    if (f.section) return `<tr class="compare-section-row"><td colspan="4">${esc(f.section)}</td></tr>`;
     const eP = f.h === 'all';
     const oP = f.h === 'optimum' || f.h === 'all';
     const mP = f.h === 'max' || f.h === 'all';
