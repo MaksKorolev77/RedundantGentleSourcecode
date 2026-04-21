@@ -398,6 +398,9 @@ a.contact-item:hover .icon-wrap .icon{color:var(--primary)}
 .detail-pkg-head{display:flex;flex-direction:column;justify-content:space-between;gap:1rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 @media(min-width:768px){.detail-pkg-head{flex-direction:row;align-items:center}}
 .detail-pkg-head .nm{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700}
+.btn-short{display:inline}
+.btn-long{display:none}
+@media(min-width:640px){.btn-short{display:none}.btn-long{display:inline}}
 .detail-pkg-head .tg{color:var(--muted-fg)}
 .detail-pkg-head .pr{font-size:1.875rem;font-weight:700;color:var(--primary)}
 .specs-section{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--primary);padding-top:.75rem;display:block}

@@ -397,7 +397,7 @@ function renderProjectDetail(){
         data-modal-desc="Комплектация ${esc(pk.name)}, ${esc(pk.price)}."
         data-default-package="${pk.key==='econom'?'эконом':pk.key==='optimum'?'оптимум':'максимум'}"
         data-default-comment="Проект «${esc(p.name)}» (${esc(p.area)} м²), комплектация ${esc(pk.name)}.">
-        Заказать «${esc(p.name)}» в комплектации ${esc(pk.name)}
+        <span class="btn-short">Заказать в этой комплектации</span><span class="btn-long">Заказать «${esc(p.name)}» в комплектации ${esc(pk.name)}</span>
       </button>
     </div>`;
 
