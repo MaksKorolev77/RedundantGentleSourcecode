@@ -169,6 +169,12 @@ svg{display:block}
 .feature-list .check,.feature-list .minus{width:1.25rem;height:1.25rem;color:var(--primary);flex-shrink:0;margin-top:.125rem}
 .feature-list .minus{color:var(--muted-fg)}
 .feature-list li.dim{color:var(--muted-fg)}
+.eng-section{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+.eng-title{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--primary);margin-bottom:1rem;display:inline-flex;align-items:center;gap:.5rem}
+.eng-title::before{content:'';display:inline-block;width:.5rem;height:.5rem;border-radius:9999px;background:var(--primary);flex-shrink:0}
+.eng-list{display:flex;flex-direction:column;gap:.625rem}
+.eng-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem}
+.eng-list .check{width:1.125rem;height:1.125rem;color:var(--primary);flex-shrink:0;margin-top:.125rem}
 
 /* ============ Process timeline ============ */
 .process{position:relative;max-width:64rem;margin:0 auto}
